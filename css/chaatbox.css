@@ -9,11 +9,11 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p.small {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a,
@@ -63,8 +63,12 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
+ 
+		color: #fff;
+	background-color: red;
+	padding-left: 10px;
+	padding-bottom: 4px;
+	font-size: 25px;
 }
 
 hr.star-primary {
