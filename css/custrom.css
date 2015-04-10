@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
+.flex-container {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:center;
+	min-height:600px;
+	width:100%;
+	
+}
 
 .notification {
 	font-size: 10px;
@@ -73,14 +82,14 @@
         opacity: 1;
         background: rgba(0,0,0,0.2);
     }
-    .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
         color:#fff;
         background: #007aff;
     }
 .cardd {
 	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.05),  1px 1px 5px 0px rgba(0,0,0,0.08);
-	width: 200px;
-	height: 250px;
+	min-width: 200px;
+	max-height: 250px;
 	position: absolute;
 	background-color: white;
 	/*background: rgba(255,251,239,1.5);*/
@@ -88,7 +97,17 @@
 	padding: 8px;
 	margin-bottom: 50px;
 	text-align:left;
+	margin:20px;
 }
+
+@media (min-width: 500px) {
+.cardd {
+	width: 260px;
+	height: 320px;
+	position: relative;
+	}
+}
+
 .cardd h4 {
 	color: #666;
 	font-size: 16px;
