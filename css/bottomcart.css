@@ -428,7 +428,7 @@ a.checkout__button:hover, a.checkout__button:focus {
 
 @media screen and (max-width:26em) {
 .bottomcart-fixed {
-	visibility:hidden; /*--RAMFIX removed card --*/
+	visibility: visible  ; /*--RAMFIX removed card --*/
 	background: rgba(255,198,0,0);
 }
 .checkout--active {
