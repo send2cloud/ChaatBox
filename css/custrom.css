@@ -25,6 +25,23 @@
 	padding: 2px;
 	background-color: red;
 }
+.notificationbig {
+	font-size: 12px;
+	float: right;
+	position: relative;
+	text-align: center;
+	min-width: 3em;
+	top: -2.75em;
+	right: -2.3em;
+	color: black;
+	border-radius: 12em;
+	border: 1px solid white;
+	box-shadow: -.5em .4em .58em rgba(0,0,0,.5);
+	padding: 2px;
+	background-color: white;
+}
+}
+
 /*--swiper--*/
 .swiper-container {
 	width: 109%;
