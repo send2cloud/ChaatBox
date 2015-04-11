@@ -54,7 +54,7 @@
 	padding: 2px;
 	background-color: white;
 }
-}
+
 
 /*--swiper--*/
 .swiper-container {
@@ -828,11 +828,10 @@ a {
 	background: rgba(255,198,0,0.95);
 	text-align: center;
 	border-top: #e2e2e2 solid 0px;
+	z-index:3000;
 }
 
-/*Checkout Specific*/
-/*Checkout Specific*/
-/*Checkout Specific*/
+/*---Checkoout Pop--*/
 
 @import url(Disabled for Preview-in-Browser: http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
 .checkout__icon {
@@ -876,14 +875,14 @@ a {
 	transform: translate3d(0, 15px, 0) translate3d(0, 30vh, 0) translate3d(0, -50vh, 0);
 }
 a.checkout__button {
+	background-color: rgba(223,0,3,1.00);
 	position: relative;
-	z-index: 1500;
+	z-index: 10;
 	display: block;
 	margin: 0 auto;
 	height: 100%;
 	border-radius: 30px;
 	color: #fff;
-	/*text-shadow: 0 0 3px  brown;*/
 	line-height: 3em;
 	-webkit-transition: background-color 0.6s cubic-bezier(0.7, 0, 0.3, 1), -webkit-transform 0.6s cubic-bezier(0.7, 0, 0.3, 1);
 	transition: background-color 0.6s cubic-bezier(0.7, 0, 0.3, 1), transform 0.6s cubic-bezier(0.7, 0, 0.3, 1);
@@ -893,7 +892,7 @@ a.checkout__button:hover, a.checkout__button:focus {
 	color: #fff;
 }
 .checkout--active a.checkout__button {
-	background-color: gold;
+	background-color: rgba(219,156,0,1.00);
 	-webkit-transform: perspective(1000px) translate3d(0, -2.5em, 0);
 	transform: perspective(1000px) translate3d(0, -2.5em, 0);
 }
@@ -926,9 +925,9 @@ a.checkout__button:hover, a.checkout__button:focus {
 .checkout__order {
 	overflow: hidden;
 	min-width: 320px;
-	/*max-width: 700px;*/
-	width: 60vw;
-	height: 75vh;
+	max-width: 700px;
+	width: 95vw;
+	height: 60vh;
 	text-align: right;
 	pointer-events: none;
 }
@@ -944,13 +943,13 @@ a.checkout__button:hover, a.checkout__button:focus {
 	background: #4e4e4f;
 	-webkit-transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1), height 0.6s cubic-bezier(0.7, 0, 0.3, 1);
 	transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1), height 0.6s cubic-bezier(0.7, 0, 0.3, 1);
-	background-color: #E60003;
 }
 .checkout--active .checkout__order::before {
 	width: 100%;
 	height: 100%;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
+	background-color: rgba(140,0,0,1.00);
 }
 .checkout__order-inner {
 	position: relative;
@@ -961,12 +960,13 @@ a.checkout__button:hover, a.checkout__button:focus {
 	top: 1.5em;
 	right: 1.5em;
 	overflow: hidden;
-	width: 40px;
-	height: 40px;
+	width: 25px;
+	height: 25px;
 	border: none;
 	background: transparent;
 	color: transparent;
-	text-indent: 100%;
+	border-radius: 100%;
+	text-indent: 1%;
 	opacity: 0;
 	backface-visibility: hidden;
 }
@@ -991,7 +991,7 @@ a.checkout__button:hover, a.checkout__button:focus {
 .checkout__summary {
 	margin: 0.5em 0 0.75em;
 	width: 100%;
-	color: white;
+	color: #fff;
 	text-align: center;
 	font-size: 1.15em;
 	line-height: 1.5;
@@ -1060,13 +1060,12 @@ a.checkout__button:hover, a.checkout__button:focus {
 	padding-top: 0.5em;
 }
 .checkout__summary tbody td {
-	padding: 0.25em 0;
+checkou  padding: 0.25em 0;
 	font-weight: 400;
 	font-size: 0.85em;
 }
 .checkout__summary thead th {
-	color: white;
-	text-decoration: underline;
+	color: #e48895;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -1091,26 +1090,20 @@ a.checkout__button:hover, a.checkout__button:focus {
 	outline: none;
 }
 .checkout__action .icon {
-	color: white;
+	color: #e48895;
 }
 
 @media screen and (max-width:26em) {
 .bottomcart-fixed {
-	visibility:hidden; /*--RAMFIX removed card --*/
-	background: rgba(255,198,0,0);
+	background: rgba(255,198,0,0.9);
+	box-shadow: 0px 0px 3px rgba(0,0,0,.70);
+
 }
 .checkout--active {
 	-webkit-transform: translate3d(0, 15px, 0);
 	transform: translate3d(0, 15px, 0);
 }
 .checkout__order::before {
-	
-	border-radius: 0%;
-	background-color: red;
-	width: 50px;
-	height: 50px;
-	font-weight: 900;
-	z-index:2049;
 }
 .checkout__summary {
 	margin-top: 2em
@@ -1126,6 +1119,7 @@ a.checkout__button:hover, a.checkout__button:focus {
 	padding-left: 10px
 }
 }
+
 
 </style>
 <!-- Custom Fonts -->
@@ -1884,15 +1878,15 @@ a.checkout__button:hover, a.checkout__button:focus {
 <div class="scroll-top page-scroll visible-xs visble-sm" style="left:2%;"> <a class="btn btn-primary" href="tel:4255255244"> <i class="fa fa-phone"></i> </a> </div>
  --> 
 <!--Cart Button (Only visible on small and extra-small screen sizes)-->
-<div class="scroll-top page-scroll hidden-sm visible-xs" style="right:2%;" > <a style="background-color:red; border:0px; padding-top:9px"  class="btn btn-primary" href="#page-top"> <i class="fa fa-shopping-cart"></i> </a>
+<!--<div class="scroll-top page-scroll hidden-sm visible-xs" style="right:2%;" > <a style="background-color:red; border:0px; padding-top:9px"  class="btn btn-primary" href="#page-top"> <i class="fa fa-shopping-cart"></i> </a>
   <div class="notification">19</div>
-</div>
+</div>-->
 
 <!--/End Cart--> 
 
 <!--BOTCART-->
 
-<div id="shoppingcart" class="container" >
+<div id="shoppingcart" >
   <div class="bottomcart-fixed" >
     <div class="checkout"> 
     <a class="checkout__button" href="#"><!-- Fallback location --> 
