@@ -1,4 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:500,700,800);
+.box {
+	border-radius:3px; 
+	border-style:none;
+	width:2em;
+	height:22px;
+	color:black;
+	text-align:center;
+	
+	}
+	
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -66,7 +76,7 @@ a {
 	transform: translate3d(0, 15px, 0) translate3d(0, 30vh, 0) translate3d(0, -50vh, 0);
 }
 a.checkout__button {
-	background-color: rgba(223,0,3,1.00);
+	background-color: rgba(223,0,3,1.00); 
 	position: relative;
 	z-index: 10;
 	display: block;
@@ -83,7 +93,7 @@ a.checkout__button:hover, a.checkout__button:focus {
 	color: #fff;
 }
 .checkout--active a.checkout__button {
-	background-color: rgba(219,156,0,1.00);
+	background-color: rgba(219,156,0,.50);
 	-webkit-transform: perspective(1000px) translate3d(0, -2.5em, 0);
 	transform: perspective(1000px) translate3d(0, -2.5em, 0);
 }
@@ -140,11 +150,12 @@ a.checkout__button:hover, a.checkout__button:focus {
 	height: 100%;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
-	background-color: rgba(129,42,0,1.00);
+    background-color: rgba(129,42,0,1.00);
+/* back color */
 }
 .checkout__order-inner {
 	position: relative;
-	padding: 3em 4em;
+	padding: 2em 4em;
 }
 .checkout__close {
 	position: absolute;
@@ -175,6 +186,7 @@ a.checkout__button:hover, a.checkout__button:focus {
 	left: 0;
 	color: #fff;
 	text-indent: 0;
+	
 }
 .checkout__close:hover .icon {
 	color: #e48895;
@@ -248,12 +260,13 @@ a.checkout__button:hover, a.checkout__button:focus {
 	transition-delay: 0.09s;
 }
 .checkout__summary tbody tr:first-child td {
-	padding-top: 0.5em;
+	padding-top: .5em;
 }
 .checkout__summary tbody td {
 	padding: 0.25em 0;
 	font-weight: 400;
 	font-size: 0.85em;
+	
 }
 .checkout__summary thead th {
 	color: #e48895;
@@ -262,14 +275,18 @@ a.checkout__button:hover, a.checkout__button:focus {
 	font-weight: 700;
 	font-size: 0.65em;
 	line-height: 2;
+	text-decoration:underline;
+
 }
-.checkout__summary thead th:first-child, .checkout__summary tbody td:first-child {
+.checkout__summary thead th:first-child, 
+.checkout__summary tbody td:first-child {
 	text-align: left;
 }
 .checkout__summary tbody td span {
 	color: #e48895;
 }
-.checkout__summary th:last-child, .checkout__summary td:last-child {
+.checkout__summary th:last-child, 
+.checkout__summary td:last-child {
 	text-align: right;
 }
 .checkout__action {
@@ -289,7 +306,7 @@ a.checkout__button:hover, a.checkout__button:focus {
 @media screen and (max-width:500px) {
 .bottomcart-fixed {
 	background: rgba(255,198,0,0.9);
-	box-shadow: 0px 0px 3px rgba(0,0,0,.70);
+	box-shadow: 0px 0px 4px rgba(0,0,0,.70);
 
 }
 .checkout--active {
