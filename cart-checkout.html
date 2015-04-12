@@ -736,7 +736,8 @@
       		<span class="checkout__text-inner checkout__initial-text"> 
       			<em class="fa fa-shopping-cart"></em> <span class="hidden-xs"> &nbsp;&nbsp;Checkout </span> </span> 
       			<span class="checkout__text-inner checkout__final-text"> 
-                $40.70 <i class="fa fa-fw fa-shopping-cart"></i> 
+                $40.70  <i class="fa fa-fw fa-shopping-cart"></i> Place Order
+                
                 </span> 
       </span> 
       </a>
@@ -756,31 +757,41 @@
               <tbody align="left">
                   <tr>
                   	<td><label style="font-size:14px">Masala Dosa</label></td>
-                  	<td > <input type="text" class="box" ></td>
+                  	<td > <input type="text" class="box" size="1" ></td>
                   	<td >$12.90</td>
                   	<td><button class="checkout__action"><i class="icon fa fa-trash"></i></button></td>
                 </tr>
-                                  <tr>
-                  	<td><label style="font-size:14px">Masala Dosa</label></td>
-                  	<td > <input type="text" class="box"></td>
-                  	<td >$12.90</td>
-                  	<td><button class="checkout__action"><i class="icon fa fa-trash"></i></button></td>
-                </tr>
-                                  <tr>
-                  	<td><label style="font-size:14px">Masala Dosa</label></td>
-                  	<td > <input type="text" class="box" ></td>
-                  	<td >$12.90</td>
-                  	<td><button class="checkout__action"><i class="icon fa fa-trash"></i></button></td>
-                </tr>
-                                  <tr>
-                  	<td><label style="font-size:14px">Masala Dosa</label></td>
-                  	<td > <input type="text" class="box" ></td>
-                  	<td >$12.90</td>
-                  	<td><button class="checkout__action"><i class="icon fa fa-trash"></i></button></td>
-                </tr>
+                    
               </tbody>
             </table>
-     
+     <table class="checkout__summary" width="100%" border="0">
+  <tbody >
+    <tr>
+      <td style="text-align:right; padding:8px; ">Name </td>
+      <td style="text-align:left"><input type="text" class="box"></td>
+    </tr>
+    <tr>
+      <td style="text-align:right; padding:8px;" >Mobile </td>
+       <td style="text-align:left"><input  type="tel" class="box"></td>
+    </tr>
+    <tr>
+      <td style="text-align:right; padding:8px;"> Email </td>
+      <td style="text-align:left"><input type="email" class="box"></td>
+    </tr>
+    <tr>
+      <td style="text-align:right; padding:8px;">Message to Kitchen </td>
+      <td style="text-align:left"> <input type="text" class="box"></td>
+    </tr>
+        <tr>
+      <td style="text-align:right; padding:8px;">Payment</td>
+      <td style="text-align:left"><input type="radio" > On Pickup <input type="radio"> Now </td>
+      </tr>
+        <tr>
+      <td></td>
+      <td style="text-align:left"><!--<button class="btn small" style="border-radius:20px; background-color:red">Place Order</button>--></td>
+    </tr>
+  </tbody>
+</table>
           </div>
           
           <!-- /checkout__summary -->
