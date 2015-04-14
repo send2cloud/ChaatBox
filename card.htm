@@ -80,10 +80,12 @@
 .cardd-price {
 	z-index: 1;
 	position: absolute;
+	text-transform:lowercase;
+	font-style:italic;
 	background-color: rgba(241,255,255,.90);
 	opacity: 1;
 	border-radius: 3px;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 400;
 	padding: 2px 6px;
 	color: brown;
@@ -108,7 +110,7 @@
 	color:brown;
 	border:solid 2px rgba(255,255,255,0.70);
 	position: absolute;
-}*/
+}
 .dollar {
 	left:-15px;
 	font-style:200;
@@ -116,6 +118,7 @@
 	background-color: red;
 	width:20px;
 	text-align:center;
+	vertical-align:middle
 	height:20px;
 	border-radius:20px;
 	color:white;
@@ -123,10 +126,11 @@
 	
 	border-top: solid 1px rgba(255,255,255,.50);
 	border-left: solid 1px rgba(255,255,255,.80);
-}
+} */
 .soldout {
-	opacity: .5;
+	opacity: .4;
 }
+
 .cardd h4 {
 	box-shadow: 0 6px 19px -12px;
 	padding: 0 0px 6px 0px;
@@ -162,7 +166,6 @@
 <div class="flex-container">
   <!--Card-->
   <div class="cardd">
-    <p class="cardd-banner">Special</p>
     
     <p class="cardd-price"><span class="dollar">$</span>24.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg" alt=""> <span class="descripbox">
@@ -183,7 +186,6 @@
   <!--//Card-->
   <!--Card-->
   <div class="cardd">
-    <p class="cardd-banner">Special</p>
     <p class="cardd-price"><span class="dollar">$</span>1.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/corn-kebab_article.jpg" alt=""> <span class="descripbox">
     <h4>Masala Bonda</h4>
@@ -203,7 +205,6 @@
   <!--//Card-->
   <!--Card-->
   <div class="cardd">
-    <p class="cardd-banner">Special</p>
     <p class="cardd-price"><span class="dollar">$</span>4.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg" alt=""> <span class="descripbox">
     <h4>Papri Chaat</h4>
@@ -212,8 +213,7 @@
     </span> </div>
   <!--//Card-->
   <!--Card-->
-  <div class="cardd">
-    <p class="cardd-banner">Special</p>
+  <div class="cardd ">
     <p class="cardd-price"><span class="dollar">$</span>8.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/corn-kebab_article.jpg" alt=""> <span class="descripbox">
     <h4>Masala Bonda</h4>
@@ -223,7 +223,6 @@
   <!--//Card-->
   <!--Card-->
   <div class="cardd">
-    <p class="cardd-banner">Special</p>
     <p class="cardd-price"><span class="dollar">$</span>7.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/aamras-kadhi_article.jpg" alt=""> <span class="descripbox">
     <h4>Masala Bonda</h4>
@@ -232,8 +231,7 @@
     </span> </div>
   <!--//Card-->
   <!--Card-->
-  <div class="cardd">
-    <p class="cardd-banner">Special</p>
+  <div class="cardd soldout">
     <p class="cardd-price"><span class="dollar">$</span>14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg" alt=""> <span class="descripbox">
     <h4>Samosa Chaat (2)</h4>
@@ -243,7 +241,6 @@
   <!--//Card-->
   <!--Card-->
   <div class="cardd">
-    <p class="cardd-banner">Special</p>
     <p class="cardd-price"><span class="dollar">$</span>1.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg" alt=""> <span class="descripbox">
     <h4>Paav Bhaaji</h4>
