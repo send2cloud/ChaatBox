@@ -65,7 +65,7 @@
 .cardd-banner {
 	position: absolute;
 	top: 20px;
-	left: -8px;
+	left: 0;
 	z-index: 1;
 	background-color: rgba(255,0,0,.8);
 	color: #fff;
@@ -94,35 +94,6 @@
 	box-shadow: 3px 0px 3px 1px rgba(0,0,0,.440);
 	border-top: solid 1px rgba(255,255,255,1.00);
 	border-left: solid 1px rgba(255,255,255,1.00);
-}
-/*.dollar {
-	left:-18px;
-	font-style:100;
-	font-size:.60em;
-	background-color: rgba(252,233,0,.90);
-	width:20px;
-	text-align:center;
-	box-shadow: inset 1px 0px 10px 0px rgba(0,0,0,.20);
-	height:20px;
-	border-radius:20px;
-	color:brown;
-	border:solid 2px rgba(255,255,255,0.70);
-	position: absolute;
-}*/
-.dollar {
-	left:-15px;
-	font-style:200;
-	font-size:.80em;
-	background-color: red;
-	width:20px;
-	text-align:center;
-	height:20px;
-	border-radius:20px;
-	color:white;
-	position: absolute;
-	
-	border-top: solid 1px rgba(255,255,255,.50);
-	border-left: solid 1px rgba(255,255,255,.80);
 }
 .soldout {
 	opacity: .5;
@@ -156,101 +127,133 @@
 	border-radius: 5px;
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/css/swiper.min.css">
+
 </head>
 
 <body>
 <div class="flex-container">
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    
-    <p class="cardd-price"><span class="dollar">$</span>24.99</p>
+    <p class="cardd-price">$24.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg" alt=""> <span class="descripbox">
     <h4>Paav Bhaaji</h4>
     <p class=" descripton">Made with hot potatoes in a deep friend batter </p>
     <button type="button" class="btn pull-right  btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+  </div>
+   <div class="swiper-slide">
+        <!-- Slides --> 
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>4.99</p>
+    <p class="cardd-price">$14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/aamras-kadhi_article.jpg" alt=""> <span class="descripbox">
     <h4>Samosa Chaat (2)</h4>
     <p class=" descripton">Deep friend batter. Served with mint chutneyMade with hot potatoes.Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep friend batter. Served with mint chutneyMade with hot potatoes.  Served with mint chutneyMade with hot potatoes. Served with mint chutneyMade with hot potatoes. Served with mint chutneyMade with hot potatoes.</p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+  </div>
+   <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>1.99</p>
+    <p class="cardd-price">$14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/corn-kebab_article.jpg" alt=""> <span class="descripbox">
     <h4>Masala Bonda</h4>
     <p class=" descripton">Made with hot deep friend batterMade with hot deep friend batterMade with hot deep friend batter </p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+    </div>
+   <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>1.79</p>
+    <p class="cardd-price">$14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/aamras-kadhi_article.jpg" alt=""> <span class="descripbox">
     <h4>Samosa Chaat (2)</h4>
     <p class=" descripton">Deep friend batter. Served with mint chutneyMade with hot potatoes.Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep friend batter. Served with mint chutneyMade with hot potatoes.  Served with mint chutneyMade with hot potatoes. Served with mint chutneyMade with hot potatoes. Served with mint chutneyMade with hot potatoes.</p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+    </div>
+   <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>4.99</p>
+    <p class="cardd-price">$14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg" alt=""> <span class="descripbox">
     <h4>Papri Chaat</h4>
     <p class=" descripton"> Chill Sauce Made with hot potatoes in a deep friend batter </p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+    </div>
+   <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>8.99</p>
+    <p class="cardd-price">$14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/corn-kebab_article.jpg" alt=""> <span class="descripbox">
     <h4>Masala Bonda</h4>
     <p class=" descripton">Made with hot deep friend batterMade with hot deep friend batterMade with hot deep friend batter </p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+    </div>
+   <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>7.99</p>
+    <p class="cardd-price">$14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/aamras-kadhi_article.jpg" alt=""> <span class="descripbox">
     <h4>Masala Bonda</h4>
     <p class=" descripton">Made with hot potatoes in a deep friend batter. Served with mint chutneyMade with hot potatoes.Made with hot potatoes in a deep friend batter </p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+    </div>
+   <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>14.99</p>
+    <p class="cardd-price">$14.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg" alt=""> <span class="descripbox">
     <h4>Samosa Chaat (2)</h4>
     <p class=" descripton">Deep friend batter. Served with mint chutneyMade with hot potatoes.Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep friend batter. Served with mint chutneyMade with hot potatoes.  Served with mint chutneyMade with hot potatoes. Served with mint chutneyMade with hot potatoes. Served with mint chutneyMade with hot potatoes.</p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+    </div>
+   <div class="swiper-slide">
   <!--Card-->
   <div class="cardd">
     <p class="cardd-banner">Special</p>
-    <p class="cardd-price"><span class="dollar">$</span>1.99</p>
+    <p class="cardd-price">$24.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/200x150/g_none/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg" alt=""> <span class="descripbox">
     <h4>Paav Bhaaji</h4>
     <p class=" descripton">Made with hot potatoes in a deep friend batter </p>
     <button type="button" class="btn pull-right btn-success">Order</button>
     </span> </div>
   <!--//Card-->
+  </div>
 </div>
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.jquery.min.js"></script>
+
+<script type="application/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </body>
 </html>
