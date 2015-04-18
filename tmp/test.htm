@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="cache-control" content="no-cache" />
@@ -10,36 +11,77 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <style>
+body {
+	top: 0px;
+	left: 0px;
+	margin: 10px;
+	background-color: rgba(230,230,230,1.00);
+}
 .flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.cardd {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-wrap: nowrap;
-	flex-wrap: no-wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
 	-webkit-justify-content: space-around;
 	justify-content: space-around;
 	-webkit-flex-direction: row;
-	flex-direction: row;
-
+	position: relative;
+	border-radius: 10px;
+	text-align: left;
+	margin: 15px;
+	box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.2);
+	width: 200px;
+	height: 275px;
 }
+.imgbox {
+	height: 50%;
+}
+.cardd img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-size: cover;
+}
+.cardd .prodbox {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255,255,255,1.00);
+}
+
+@media screen and (max-width: 600px) {
 .cardd {
-	height: 20px;
-	padding:20px;
+	width: 150px;
+	height: 200px;
+}
 }
 </style>
 </head>
-
 <body>
 <div  class="flex-container">
-  <div  style="
-	background-color: green;" class="cardd">sd</div>
-  <div style="
-	background-color: blue;" class="cardd">we</div>
-  <div style="
-	background-color: orange;" class="cardd">23sadasdada</div>
+  <div style="background-color: lightblue;" class="cardd">
+    <div class="imgbox"><img src="http://placehold.it/150x100&text=Product"> </div>
+    <div class="prodbox"> </div>
+  </div>
+  <div style="background-color: blue;" class="cardd">we</div>
+  <div style="background-color: orange;" class="cardd">23sadasdada</div>
+  <div style="background-color: lightgreen;" class="cardd">sd</div>
+  <div style="background-color: pink;" class="cardd">sd</div>
+  <div style="background-color: blue;" class="cardd">we</div>
+  <div style="background-color: orange;" class="cardd">23sadasdada</div>
+  <div style="background-color: green;" class="cardd">sd</div>
+  <div style="background-color: darkgreen;" class="cardd">sd</div>
+  <div style="background-color: gold;" class="cardd">we</div>
+  <div style="background-color: orange;" class="cardd">23sadasdada</div>
+  <div style="background-color: teal;" class="cardd">sd</div>
 </div>
 </body>
 </html>

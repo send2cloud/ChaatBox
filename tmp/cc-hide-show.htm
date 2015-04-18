@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+.creditcard {
+	background-color: gold;
+	visibility: hidden;
+	width: 400px;
+	height: 200px;
+}
+input[type="radio"]:checked +.creditcard {
+	visibility: visible;
+}
+</style>
+</head>
+
+<body>
+<div id="Payment">
+  <input name="payoption" type="radio" value="payatstore" checked>
+  Pay at Store
+  </input>
+  <input name="payoption"  type="radio" value="paynow">
+  Pay Now
+  </input>
+  <div class="creditcard"> Card Numbers</div>
+</div>
+</body>
+</html>
