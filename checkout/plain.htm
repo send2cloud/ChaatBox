@@ -107,6 +107,9 @@ body {
 .tabbl {
 	width: 100%;
 	border:0px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight:100;
 }
 .tabbl tbody {
 	overflow-y: scroll;
@@ -124,6 +127,24 @@ body {
 .tabbl th {
 	background-color: maroon;
 	
+}
+.tabbl .qtyy {
+	border-radius:5px;
+	outline:none;
+	color:black;
+	width:3em;
+	font-weight:500;
+	border: 0px solid;
+}
+
+.textfld {
+	border-radius:3px;
+	outline:none;
+	color:black;
+	width:12em;
+	font-weight:500;
+	border: 0px solid;
+	padding:2px;
 }
 
 </style>
@@ -145,55 +166,55 @@ body {
         <tbody>
           <tr>
             <td>Papri Chaat</td>
-            <td><input name="number" type="text" class="input-sm" id="number" size="2" maxlength="2"></td>
+            <td><input name="number" type="text" class="qtyy" id="number" size="2" border="0" maxlength="2"></td>
             <td>$ 5.39</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Samosa (2)</td>
-            <td><input name="number5" type="text" class="input-sm" id="number5" size="2" maxlength="2"></td>
+            <td><input name="number5" type="text" class="qtyy" id="number5" size="2" border="0"  maxlength="2"></td>
             <td>$ 3.00</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Mango Lassi</td>
-            <td><input name="number2" type="text" class="input-sm" id="number2" size="2" maxlength="2"></td>
+            <td><input name="number2" type="text" class="qtyy" id="number2" size="2" maxlength="2"></td>
             <td>$ 5.99</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
@@ -214,15 +235,15 @@ body {
       <table  class=" table-condensed" width="50%" border="0" align="right" cellpadding="2" cellspacing="2">
         <tr>
           <td>Name </td>
-          <td><input type="text"></td>
+          <td><input type="text" class="textfld"></td>
         </tr>
         <tr>
           <td>Mobile</td>
-          <td><input type="tel"></td>
+          <td><input type="tel" class="textfld"></td>
         </tr>
         <tr>
           <td>Email</td>
-          <td><input type="email"></td>
+          <td><input type="email" class="textfld"></td>
         </tr>
       </table>
     </div>
