@@ -10,7 +10,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <style>
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 .bttn {
 	border: none;
 	padding: 0.6em 1.2em;
@@ -25,13 +27,14 @@
 	margin: 3px 2px;
 	border-radius: 2px;
 	outline: none;
-	max-width:200px;
+	max-width: 200px;
 }
-.bttn:hover{
+.bttn:hover {
 	background: #A5281B;
 }
-.bttn:active{background-color:red;}
-
+.bttn:active {
+	background-color: red;
+}
 .checkout-modal {
 	display: -webkit-box;
 	display: -moz-box;
@@ -44,25 +47,19 @@
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
 	-webkit-flex-direction: column;
-	flex-direction:column;
+	flex-direction: column;
 	position: relative;
 	/*display:none;*/
-		
-	min-width: 500px;
-	height: auto ;
+	background: #e74c3c;
+	color:white;
+	min-width: 400px;
+	height: auto;
 	z-index: 20000;
-	background-color: #eee;
 	border: solid 1px black;
 	-webkit-transition: all 6000ms easeInOutElastic;
 	transition: all 6000ms easeInOutElastic;
 }
-.checkout-content:nth-child(1) {
-	flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 100%;
-	background-color:blue;
-}
-.checkout-content-orderdata-container{
+.checkout-container-orderdata {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -73,22 +70,60 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	-webkit-flex-direction: row;
-	flex-direction:row;
-	background-color:gold;
-	}
+	flex-direction: row;
+}
+.checkout-itemlist {
+	height: 230px;
+	padding:0px;
+}
+.checkout-itemlist img {
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.checkout-customerdetails {
+padding:20px;
+}
+.checkout-paymentdetails {
+padding:20px;
+}
+.checkout-total{
+	
+	display:flex;
+	background: rgba(234,100,86,1.00);
+	height:35px;	
+	font-size:1.2em;
+	font-weight:600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-bottom: dotted 1px rgba(255,255,255,.40);
 
-.checkout-content-items {
-	background-color:brown;
-	overflow:auto;
-	
 }
-.checkout-content-customerdetails {
-	background-color:teal;
-	
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
-.checkout-content-paymentdetails {
+/*--Table--*/
+
+.tabbl {
+	width: 100%;
+	border:0px;
+}
+.tabbl tbody {
+	overflow-y: scroll;
+	height: 200px;
+	width: 100%;
+	position: absolute;
+}
+.tabbl tr {
+	width: 100%;
+	display: inline-table;
+}
+.tabbl td, th {
+	width: 25%;
+}
+.tabbl th {
+	background-color: maroon;
 	
-	background-color:pink;
 }
 
 </style>
@@ -96,16 +131,118 @@
 
 <body>
 <div class="checkout-modal" id="checkout-modal">
-  <div class="checkout-content-items"><img src="http://placehold.it/900x200&text=Items"></div>
-  <div class="checkout-content-orderdata-container">
-  <div class="checkout-content-customerdetails"><img src="http://placehold.it/300x200&text=Customer Data">
+  <div class="checkout-itemlist" align="center">
+    <div class="">
+      <table  class=" tabbl table-condensed table-responsive">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Papri Chaat</td>
+            <td><input name="number" type="text" class="input-sm" id="number" size="2" maxlength="2"></td>
+            <td>$ 5.39</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Samosa (2)</td>
+            <td><input name="number5" type="text" class="input-sm" id="number5" size="2" maxlength="2"></td>
+            <td>$ 3.00</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Mango Lassi</td>
+            <td><input name="number2" type="text" class="input-sm" id="number2" size="2" maxlength="2"></td>
+            <td>$ 5.99</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Paav Bhaaji</td>
+            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td>$ 4.75</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Paav Bhaaji</td>
+            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td>$ 4.75</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Paav Bhaaji</td>
+            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td>$ 4.75</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Paav Bhaaji</td>
+            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td>$ 4.75</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Paav Bhaaji</td>
+            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td>$ 4.75</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Paav Bhaaji</td>
+            <td><input name="number3" type="text" class="input-sm" id="number3" size="2" maxlength="2"></td>
+            <td>$ 4.75</td>
+            <td><i class="icon fa fa-trash"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="checkout-total">
+        <table  class=" table-condensed" width="100%" border="0" align="right" cellpadding="2" cellspacing="2">
+        <tr>
+          <td width="16%">Total </td>
+          <td width="68%">$32.32</td>
+        </tr>
+      </table>
+  </div>
+  <div class="checkout-container-orderdata" align="center">
+    <div class="checkout-customerdetails">
+      <table  class=" table-condensed" width="50%" border="0" align="right" cellpadding="2" cellspacing="2">
+        <tr>
+          <td>Name </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Mobile</td>
+          <td><input type="tel"></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="checkout-paymentdetails">
 
+      <table  class=" table-condensed" width="100%" border="0" align="left" cellpadding="2" cellspacing="2">
+        <tr>
+          <td width="7"><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0"></td>
+          <td width="7" nowrap>Pay Now</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1"></td>
+          <td nowrap>Pay at the store</td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <div class="checkout-content-paymentdetails"><img src="http://placehold.it/300x200&text=Payment Data">
-</div>
+  <div align="center" style="padding:15px;">
+    <button class="bttn" id="checkout-trigger2">Place Order</button>
   </div>
-  <button class="bttn" id="checkout-trigger2">Place Order</button>
- 
 </div>
 <div align="center" class="nav navbar-fixed-bottom" style="background-color:gold;padding:10px">
   <button id="checkout-trigger" class="bttn">Togo Order</button>
