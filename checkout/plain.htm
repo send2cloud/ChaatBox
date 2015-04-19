@@ -173,14 +173,20 @@ body {
 .tabbl th {
 	background-color: maroon;
 }
-.tabbl .qtyy {
+.qtyy {
 	border-radius: 5px;
 	outline: none;
 	color: black;
 	width: 3em;
 	font-weight: 500;
 	border: 0px solid;
+	box-shadow: -1px -1px 2px 1px rgba(200,0,3,1.00);
+	text-align:center;
+
 }
+.qtyy:focus, .textfld:focus	{
+	background-color: rgba(255,215,0,1.50);
+	}
 .textfld {
 	border-radius: 3px;
 	outline: none;
@@ -189,13 +195,23 @@ body {
 	font-weight: 500;
 	border: 0px solid;
 	padding: 2px;
+	box-shadow: -1px -1px 2px 1px rgba(200,0,3,1.00);
+
 }
+.bgm{
+	background-color:rgba(238,238,238,0.20);
+	border-radius:5px;
+	
+	}
 </style>
 </head>
 
 <body>
 <div class="checkout-modal" id="checkout-modal" style="display:none;">
- <div class=" ribbon" align="center"> <h4>TOGO ORDER</h4></div>
+ <div class=" ribbon" align="center"> <h4>TOGO ORDER</h4>
+  </div> 
+   
+ 
   <div class="checkout-itemlist" align="center">
     <div class="">
       <table  class=" tabbl table-condensed table-responsive">
@@ -210,55 +226,55 @@ body {
         <tbody>
           <tr>
             <td>Papri Chaat</td>
-            <td><input name="number" type="text" class="qtyy" id="number" size="2" border="0" maxlength="2"></td>
+            <td><input name="number" type="text" class="qtyy" id="number" value="1" size="2" maxlength="2" border="0"></td>
             <td>$ 5.39</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Samosa (2)</td>
-            <td><input name="number5" type="text" class="qtyy" id="number5" size="2" border="0"  maxlength="2"></td>
+            <td><input name="number5" type="text" class="qtyy" id="number5" value="1" size="2" border="0"  maxlength="2"></td>
             <td>$ 3.00</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Mango Lassi</td>
-            <td><input name="number2" type="text" class="qtyy" id="number2" size="2" maxlength="2"></td>
+            <td><input name="number2" type="text" class="qtyy" id="number2" value="1" size="2" maxlength="2"></td>
             <td>$ 5.99</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3"  value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" size="2" maxlength="2"></td>
+            <td><input name="number3" type="text" class="qtyy" id="number3"  value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
@@ -267,7 +283,7 @@ body {
     </div>
   </div>
   <div class="checkout-total">
-    <table  class=" table-condensed" width="100%" border="0" align="right" cellpadding="2" cellspacing="2">
+    <table  class=" table-condensed bgm" width="100%" border="0" align="right" cellpadding="2" cellspacing="2">
       <tr>
         <td width="16%">Total </td>
         <td width="68%">$32.32</td>
@@ -292,9 +308,9 @@ body {
       </table>
     </div>
     <div class="checkout-paymentdetails">
-      <table  class=" table-condensed" width="100%" border="0" align="left" cellpadding="2" cellspacing="2">
+      <table  class="table-condensed" width="100%" border="0" align="left" cellpadding="2" cellspacing="2">
         <tr>
-          <td width="7"><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0"></td>
+          <td width="7"><input  type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0"></td>
           <td width="7" nowrap>Pay Now</td>
         </tr>
         <tr>
