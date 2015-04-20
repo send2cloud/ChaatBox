@@ -208,6 +208,11 @@ body {
 	font-family: fontAwesome; 
 	content:'\f002'; 
 	}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 @media(max-width:600px) {
 .checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails  {
 	padding: 2px;
@@ -243,55 +248,55 @@ body {
         <tbody>
           <tr>
             <td>Papri Chaat</td>
-            <td><input name="number" type="text" class="qtyy" id="number" value="1" size="2" maxlength="2" border="0"></td>
+            <td><input name="number" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number" value="1" size="2" maxlength="2" border="0"></td>
             <td>$ 5.39</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Samosa (2)</td>
-            <td><input name="number5" type="text" class="qtyy" id="number5" value="1" size="2" border="0"  maxlength="2"></td>
+            <td><input name="number5" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number5" value="1" size="2" border="0"  maxlength="2"></td>
             <td>$ 3.00</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Mango Lassi</td>
-            <td><input name="number2" type="text" class="qtyy" id="number2" value="1" size="2" maxlength="2"></td>
+            <td><input name="number2" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number2" value="1" size="2" maxlength="2"></td>
             <td>$ 5.99</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
+            <td><input name="number3" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
+            <td><input name="number3" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
+            <td><input name="number3" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
+            <td><input name="number3" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number3" value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3"  value="1" size="2" maxlength="2"></td>
+            <td><input name="number3" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number3"  value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
           <tr>
             <td>Paav Bhaaji</td>
-            <td><input name="number3" type="text" class="qtyy" id="number3"  value="1" size="2" maxlength="2"></td>
+            <td><input name="number3" type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="qtyy" id="number3"  value="1" size="2" maxlength="2"></td>
             <td>$ 4.75</td>
             <td><i class="icon fa fa-trash"></i></td>
           </tr>
@@ -312,19 +317,19 @@ body {
       <table  class=" table-condensed" width="100%" border="0" align="right" cellpadding="2" cellspacing="2">
         <tr>
           <td>Name </td>
-          <td><input type="text" class="textfld"></td>
+          <td><input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
         <tr>
           <td>Mobile</td>
-          <td><input type="tel" required class="textfld"></td>
+          <td><input type="tel" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
         <tr>
           <td>Email</td>
-          <td><input type="email" class="textfld"></td>
+          <td><input type="email" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
          <tr>
           <td>Special Instructions</td>
-          <td><input type="text" class="textfld"></td>
+          <td><input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
       </table>
     </div>
@@ -362,15 +367,17 @@ body {
       <table  class=" table-condensed" border="0" align="right" cellpadding="2" cellspacing="2" >
         <tr>
           <td nowrap>Credit Card Number</td>
-          <td><input type="tel" class="textfld cclock"></td>
+          <td><input type="tel" onClick="this.setSelectionRange(0, this.value.length)"  class="textfld cclock"></td>
         </tr>
         <tr>
           <td>Exp</td>
-          <td><input type="text" required class="textfld" size="5" maxlength="5">    <input type="text" required class="textfld" size="5" maxlength="5"></td>
+          <td>
+          <input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld" size="5" maxlength="5">    
+          <input type="text" onClick="this.setSelectionRange(0, this.value.length)" required class="textfld" size="5" maxlength="5"></td>
         </tr>
         <tr>
           <td>CCV</td>
-          <td><input type="text" class="textfld" size="5" maxlength="5"></td>
+          <td><input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld" size="5" maxlength="5"></td>
         </tr>
       </table>
     </div>
