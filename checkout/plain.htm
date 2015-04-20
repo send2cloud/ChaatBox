@@ -80,12 +80,10 @@
 	width: 100%;
 	height: auto;
 }
-.checkout-customerdetails {
+.checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails  {
 	padding: 20px;
 }
-.checkout-paymentdetails {
-	padding: 20px;
-}
+
 .checkout-total {
 	height: 35px;
 	font-size: 1.2em;
@@ -191,7 +189,7 @@ body {
 	border-radius: 3px;
 	outline: none;
 	color: black;
-	width: 12em;
+	text-indent:5px;
 	font-weight: 500;
 	border: 0px solid;
 	padding: 2px;
@@ -203,6 +201,15 @@ body {
 	border-radius:5px;
 	
 	}
+.cclock {
+	text-indent:12px;
+	}
+.cclock::before{
+	font-family: fontAwesome; 
+	content:'\f002'; 
+	}
+	
+
 </style>
 </head>
 
@@ -299,7 +306,7 @@ body {
         </tr>
         <tr>
           <td>Mobile</td>
-          <td><input type="tel" class="textfld"></td>
+          <td><input type="tel" required class="textfld"></td>
         </tr>
         <tr>
           <td>Email</td>
@@ -310,12 +317,46 @@ body {
     <div class="checkout-paymentdetails">
       <table  class="table-condensed" width="100%" border="0" align="left" cellpadding="2" cellspacing="2">
         <tr>
-          <td width="7"><input  type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0"></td>
-          <td width="7" nowrap>Pay Now</td>
+          <td width="7"><input  type="radio" name="RadioGroup1" value="store" id="PayNow" ></td>
+          <td nowrap>Pay at the store</td>
         </tr>
         <tr>
-          <td><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1"></td>
-          <td nowrap>Pay at the store</td>
+          <td><input type="radio" name="RadioGroup1" value="creditcard" id="PayNow" checked></td>
+          <td nowrap>Pay Now</td>
+        </tr>
+      </table>
+    </div>
+    
+    <!--Cash Details-->
+    <div id="cashdetails" class="checkout-customerdetails hidden">
+          <table  class=" table-condensed" border="0" align="right" cellpadding="2" cellspacing="2">
+        <tr>
+          <td >Order Number: <br/>902</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>We Accept: <br/>Visa , American Expess &amp; Discover</td>
+          <td> </td>
+        </tr>
+
+      </table>
+    </div>
+    
+    
+    <!--Credit Card Details-->
+        <div id="" class="creditcarddetails">
+      <table  class=" table-condensed" border="0" align="right" cellpadding="2" cellspacing="2">
+        <tr>
+          <td nowrap>Credit Card Number</td>
+          <td><input type="text" class="textfld cclock"></td>
+        </tr>
+        <tr>
+          <td>Exp</td>
+          <td><input type="text" required class="textfld" size="5" maxlength="5">    <input type="text" required class="textfld" size="5" maxlength="5"></td>
+        </tr>
+        <tr>
+          <td>CCV</td>
+          <td><input type="text" class="textfld" size="5" maxlength="5"></td>
         </tr>
       </table>
     </div>
