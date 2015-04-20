@@ -28,6 +28,7 @@
 	border-radius: 2px;
 	outline: none;
 	max-width: 200px;
+	margin-bottom:5px;
 }
 .bttn:hover {
 	background: #A5281B;
@@ -208,11 +209,7 @@ body {
 	font-family: fontAwesome; 
 	content:'\f002'; 
 	}
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
+
 @media(max-width:600px) {
 .checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails  {
 	padding: 2px;
@@ -221,8 +218,25 @@ input[type=number]::-webkit-outer-spin-button {
 	border-radius: 2px;
 	padding: 0px;
 }
-.table-condensed {
-	padding:2px !important;
+.tabbl tr {
+	width: 95%;
+	display: inline-table;
+}
+.tabbl td, th {
+	width: 20%;
+}
+.tabbl td:nth-child(1), th:nth-child(1){
+	width: 40%;
+	}
+.tabbl td:nth-child(4), th:nth-child(4){
+	width: 5%;
+	}
+	
+	.bttn {
+	font-size: .8em;
+	border-radius: 1px;
+	outline: none;
+	max-width: 150px;
 }
 }
 </style>
@@ -230,10 +244,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 <body>
 <div class="checkout-modal" id="checkout-modal" style="display:none;">
- <div class=" ribbon hidden-sm hidden-xs" align="center"> <h4>TOGO ORDER</h4>
+ <div class="ribbon hidden-sm hidden-xs" align="center"> <h4>TOGO ORDER</h4>
   </div> 
-   
- 
+
   <div class="checkout-itemlist" align="center">
     <div>
       <table  class="tabbl table-condensed table-responsive">
@@ -328,7 +341,7 @@ input[type=number]::-webkit-outer-spin-button {
           <td><input type="email" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
          <tr>
-          <td>Special Instructions</td>
+          <td>Notes</td>
           <td><input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
       </table>
@@ -336,11 +349,11 @@ input[type=number]::-webkit-outer-spin-button {
     <div class="checkout-paymentdetails">
       <table  class="table-condensed" width="100%" border="0" align="left" cellpadding="2" cellspacing="2">
         <tr>
-          <td width="7"><input  type="radio" name="RadioGroup1" value="store" id="PayNow" ></td>
+          <td width="7"><input  type="radio" name="Payradiogroup" value="PayLater" id="PayLater" checked></td>
           <td nowrap>Pay at the store</td>
         </tr>
-        <tr style="background-color: rgba(227,48,29,0.20)">
-          <td ><input type="radio" name="RadioGroup1" value="creditcard" id="PayNow" checked></td>
+        <tr>
+          <td ><input type="radio" name="Payradiogroup" value="PayNow" id="PayNow" ></td>
           <td nowrap>Pay Now</td>
         </tr>
       </table>
@@ -363,10 +376,10 @@ input[type=number]::-webkit-outer-spin-button {
     
     
     <!--Credit Card Details-->
-        <div id="" class="creditcarddetails" style="background-color: rgba(227,48,29,0.20)">
+        <div id="creditcarddetails" class="creditcarddetails" style="background-color: rgba(227,48,29,0.20);display:none;">
       <table  class=" table-condensed" border="0" align="right" cellpadding="2" cellspacing="2" >
         <tr>
-          <td nowrap>Credit Card Number</td>
+          <td nowrap>Credit Card</td>
           <td><input type="tel" onClick="this.setSelectionRange(0, this.value.length)"  class="textfld cclock"></td>
         </tr>
         <tr>
@@ -382,8 +395,13 @@ input[type=number]::-webkit-outer-spin-button {
       </table>
     </div>
   </div>
-  <div align="center" style="padding:15px;">
+  <div align="center" >
+ 
     <button class="bttn" id="checkout-trigger2">Place Order</button>
+<!--   
+    <div  align="center" class="visible-xs visible-sm pull-right">--> 
+    <button class="bttn" id="checkout-trigger3">Close</button>
+    </div>
   </div>
 </div>
 <div align="center" class="nav navbar-fixed-bottom" style="background-color:gold;padding:10px">
@@ -394,10 +412,17 @@ input[type=number]::-webkit-outer-spin-button {
 <script>
 
 $(document).ready(function(){
-    $("#checkout-trigger, #checkout-trigger2").click(function(){
+    $("#checkout-trigger, #checkout-trigger2, #checkout-trigger3").click(function(){
 	 $("#checkout-modal").fadeToggle("fast");
-
     });
+	$("#PayNow").click(function(){
+		
+    $("#creditcarddetails").show('slow');
+});
+$("#PayLater").click(function(){
+		
+    $("#creditcarddetails").hide('slow');
+});
 });
 </script>
 </body>
