@@ -208,20 +208,30 @@ body {
 	font-family: fontAwesome; 
 	content:'\f002'; 
 	}
-	
-
+@media(max-width:600px) {
+.checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails  {
+	padding: 2px;
+}
+.textfld {
+	border-radius: 2px;
+	padding: 0px;
+}
+.table-condensed {
+	padding:2px !important;
+}
+}
 </style>
 </head>
 
 <body>
 <div class="checkout-modal" id="checkout-modal" style="display:none;">
- <div class=" ribbon" align="center"> <h4>TOGO ORDER</h4>
+ <div class=" ribbon hidden-sm hidden-xs" align="center"> <h4>TOGO ORDER</h4>
   </div> 
    
  
   <div class="checkout-itemlist" align="center">
-    <div class="">
-      <table  class=" tabbl table-condensed table-responsive">
+    <div>
+      <table  class="tabbl table-condensed table-responsive">
         <thead>
           <tr>
             <th>Item</th>
@@ -311,6 +321,10 @@ body {
         <tr>
           <td>Email</td>
           <td><input type="email" class="textfld"></td>
+        </tr>
+         <tr>
+          <td>Special Instructions</td>
+          <td><input type="text" class="textfld"></td>
         </tr>
       </table>
     </div>
