@@ -10,7 +10,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-
 <style>
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 .bttn {
@@ -28,7 +27,7 @@
 	border-radius: 2px;
 	outline: none;
 	max-width: 200px;
-	margin-bottom:5px;
+	margin-bottom: 5px;
 }
 .bttn:hover {
 	background: #A5281B;
@@ -37,7 +36,10 @@
 	background-color: red;
 }
 .checkout-modal {
-	display: -webkit-box;
+	margin::20px;
+	width: 75vw;
+	height: 90vh;
+	/*display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -moz-flex;
@@ -45,19 +47,19 @@
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-justify-content: flex-start;
-	justify-content: flex-start;
+	-webkit-justify-content: center;
+	justify-content: center;
 	-webkit-flex-direction: column;
-	flex-direction: column;
-	position: relative;
-	/*display:none;*/
+	flex-direction: column;*/
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	display: none;
 	background: #e74c3c;
 	color: white;
-	min-width: 400px;
 	height: auto;
 	z-index: 20000;
-	
-	box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.20)
+/*	box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.20);*/
 }
 .checkout-container-orderdata {
 	display: -webkit-box;
@@ -76,15 +78,10 @@
 	height: 230px;
 	padding: 0px;
 }
-.checkout-itemlist img {
-	background-size: cover;
-	width: 100%;
-	height: auto;
-}
-.checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails  {
+
+.checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails {
 	padding: 20px;
 }
-
 .checkout-total {
 	height: 35px;
 	font-size: 1.2em;
@@ -99,47 +96,47 @@ body {
 }
 /*--Ribbon--*/
 .ribbon {
- width: 150px;
- position: relative;
- background: rgba(234,100,86,1);
- color: #fff;
- text-align: center;
- padding: 0em 0em; /* Adjust to suit */
- margin: 1em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+	width: 150px;
+	position: relative;
+	background: rgba(234,100,86,1);
+	color: #fff;
+	text-align: center;
+	padding: 0em 0em; /* Adjust to suit */
+	margin: 1em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 .ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -.7em;
- border: 1.5em solid rgba(165,0,0,.20);
- z-index: -1;
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -.7em;
+	border: 1.5em solid rgba(165,0,0,.20);
+	z-index: -1;
 }
 .ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
+	left: -2em;
+	border-right-width: 1.5em;
+	border-left-color: transparent;
 }
 .ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
+	right: -2em;
+	border-left-width: 1.5em;
+	border-right-color: transparent;
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #804f7c transparent transparent transparent;
- bottom: -.7em;
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #804f7c transparent transparent transparent;
+	bottom: -.7em;
 }
 .ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
+	left: 0;
+	border-width: 1em 0 0 1em;
 }
 .ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
+	right: 0;
+	border-width: 1em 1em 0 0;
 }
 /*--Table--*/
 
@@ -163,12 +160,12 @@ body {
 .tabbl td, th {
 	width: 25%;
 }
-.tabbl td:nth-child(1), th:nth-child(1){
+.tabbl td:nth-child(1), th:nth-child(1) {
 	width: 45%;
-	}
-.tabbl td:nth-child(4), th:nth-child(4){
+}
+.tabbl td:nth-child(4), th:nth-child(4) {
 	width: 5%;
-	}
+}
 .tabbl th {
 	background-color: maroon;
 }
@@ -180,41 +177,47 @@ body {
 	font-weight: 500;
 	border: 0px solid;
 	box-shadow: -1px -1px 2px 1px rgba(200,0,3,1.00);
-	text-align:center;
-
+	text-align: center;
 }
-.qtyy:focus, .textfld:focus	{
+.qtyy:focus, .textfld:focus {
 	background-color: rgba(255,215,0,1.50);
-	}
+}
 .textfld {
 	border-radius: 3px;
 	outline: none;
 	color: black;
-	text-indent:5px;
+	text-indent: 5px;
 	font-weight: 500;
 	border: 0px solid;
 	padding: 2px;
 	box-shadow: -1px -1px 2px 1px rgba(200,0,3,1.00);
-
 }
-.bgm{
-	background-color:rgba(238,238,238,0.20);
-	border-radius:5px;
-	
-	}
+.bgm {
+	background-color: rgba(238,238,238,0.20);
+	border-radius: 5px;
+}
 .cclock {
-	text-indent:20px;
-	width:13em;
-	}
+	text-indent: 20px;
+	width: 13em;
+}
 .cclock + .glyphicon {
-    position: relative;
-    left: -175px;
-	color:lightgrey;
-	font-size:.8em;
+	position: relative;
+	left: -175px;
+	color: lightgrey;
+	font-size: .8em;
+}
+
+@media(max-width:600px) {
+.checkout-modal {
+	width: 100%;
+	height: auto;
+	left: 0%;
+	top:0%;
+	padding:0px;
 
 }
-@media(max-width:600px) {
-.checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails  {
+
+.checkout-customerdetails, .checkout-paymentdetails, .creditcarddetails {
 	padding: 2px;
 }
 .textfld {
@@ -228,27 +231,25 @@ body {
 .tabbl td, th {
 	width: 20%;
 }
-.tabbl td:nth-child(1), th:nth-child(1){
+.tabbl td:nth-child(1), th:nth-child(1) {
 	width: 40%;
-	}
-.tabbl td:nth-child(4), th:nth-child(4){
+}
+.tabbl td:nth-child(4), th:nth-child(4) {
 	width: 5%;
-	}
-	
-	.bttn {
+}
+.bttn {
 	outline: none;
 	max-width: 150px;
 }
-
 }
 </style>
 </head>
 
 <body>
-<div class="checkout-modal" id="checkout-modal" style="display:none;">
- <div class="ribbon hidden-sm hidden-xs" align="center"> <h4>TOGO ORDER</h4>
-  </div> 
-
+<div align="center" class="checkout-modal" id="checkout-modal" >
+<!--  <div class="ribbon hidden-sm hidden-xs" align="center">
+    <h4>TOGO ORDER</h4>
+  </div>-->
   <div class="checkout-itemlist" align="center">
     <div>
       <table  class="tabbl table-condensed table-responsive">
@@ -342,7 +343,7 @@ body {
           <td>Email</td>
           <td><input type="email" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
-         <tr>
+        <tr>
           <td>Notes</td>
           <td><input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld"></td>
         </tr>
@@ -360,49 +361,43 @@ body {
         </tr>
       </table>
     </div>
-   
-    
     <!--Credit Card Details-->
-        <div id="creditcarddetails" class="creditcarddetails" style="background-color: rgba(227,48,29,0.20);display:none;">
+    <div id="creditcarddetails" class="creditcarddetails" style="background-color: rgba(227,48,29,0.20);display:none;">
       <table  class=" table-condensed" border="0" align="right" cellpadding="2" cellspacing="2" >
- <tr  class="">
+        <tr  class="">
           <td colspan="2"><span class="small active" style="color:rgba(255,255,0,0.80);">Your Credit Card is securely handled by our Payment Processor.</span></td>
         <tr>
           <td nowrap>Credit Card</td>
-          <td><input type="tel" onClick="this.setSelectionRange(0, this.value.length)"  class="textfld cclock"><span class=" glyphicon glyphicon-lock"></span></td>
+          <td><input type="tel" onClick="this.setSelectionRange(0, this.value.length)"  class="textfld cclock">
+            <span class=" glyphicon glyphicon-lock"></span></td>
         </tr>
         <tr>
           <td>Exp</td>
-          <td>
-          <input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld" size="5" maxlength="5">    
-          <input type="text" onClick="this.setSelectionRange(0, this.value.length)" required class="textfld" size="5" maxlength="5"></td>
+          <td><input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld" size="5" maxlength="5">
+            <input type="text" onClick="this.setSelectionRange(0, this.value.length)" required class="textfld" size="5" maxlength="5"></td>
         </tr>
         <tr>
           <td>CCV</td>
           <td><input type="text" onClick="this.setSelectionRange(0, this.value.length)" class="textfld" size="5" maxlength="5"></td>
         </tr>
-
       </table>
     </div>
   </div>
   <div align="center" >
- 
     <button class="bttn" id="checkout-trigger2">Place Order</button>
-
     <button class="bttn" id="checkout-trigger3">Close</button>
-    </div>
   </div>
+</div>
 </div>
 <div align="center" class="nav navbar-fixed-bottom" style="background-color:gold;padding:10px">
   <button id="checkout-trigger" class="bttn">Togo Order</button>
 </div>
 <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
 <script>
 
 $(document).ready(function(){
     $("#checkout-trigger, #checkout-trigger2, #checkout-trigger3").click(function(){
-	 $("#checkout-modal").fadeToggle("fast");
+	 $("#checkout-modal").slideToggle('fast');
     });
 	$("#PayNow").click(function(){
 		
