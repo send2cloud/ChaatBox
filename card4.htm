@@ -20,9 +20,10 @@
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-justify-content: center;
-	justify-content: center;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
 	-webkit-flex-direction: row;
+	flex-direction:row;
 }
 .cardd {
 	display: -webkit-box;
@@ -33,9 +34,10 @@
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
 	-webkit-flex-direction: row;
+	
 	position: relative;
 	background-color: white;
 	padding: 0px;
@@ -99,26 +101,42 @@
 	opacity: .4;
 }
 
+.descripbox{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	-webkit-flex-direction: row;
+	font-size: .9em;
+	position:inherit;
+	top:-10px;
+	
+
+	}
 .headerr {
-	position:relative;
-	top:-15px;
-	left:5px;
+	
+	
 	text-align: center;
 	font-size: 1.2em;
 }
-.cardd .descripton {
-	font-size: 1em;
-	padding-left: 10px;
+.descripton  {
+	overflow: auto;
+	padding-left: 8px;
 	padding-right: 8px;
 	font-weight: 300;
-	overflow : hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
-	height: 45px;
-	width: 100%;
+	background-color: rgba(255,215,0,.02);
 	text-align: left;
+	margin-bottom:20px;
 }
 .cardd button {
 	font-weight: 200;
@@ -154,7 +172,7 @@
 	padding-left: 3px;
 	padding-right: 3px;
 	font-weight: 200;
-	overflow : hidden;
+	overflow: hidden   ;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -189,7 +207,7 @@
     <p class="cardd-price"><span class="dollar">$</span>24.99</p>
     <img  style="" class="" src="https://efmxurehx9yw.firesize.com/g_center/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg" alt=""> <span class="descripbox">
     <span class="headerr">Paav Bhaaji</span>
-    <p class=" descripton">Made with hot potatoes in a deep friend batter </p>
+    <div class="descripton">Made with hot potatoes in a deep friend batter </div>
     <button type="button" class="btn pull-right  btn-success">Order</button>
     </span> </div>
   <!--//Card-->
