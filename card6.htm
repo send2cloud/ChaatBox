@@ -111,6 +111,9 @@
 .proddbutton {
 	margin-right: 8px;
 }
+.proddbutton button:active {
+	background-color: red !important;
+}
 .soldout {
 	opacity: .5;
 }
@@ -150,13 +153,40 @@
 	margin-top: 105px;
 	font-size: .9em;
 	text-align: center;
+	line-height:1.1em;
 }
 .proddescription {
-	visibility: collapse;
+	opacity:0;
+	position: relative  ;
+	top:-120px;
+	width:auto;
+	height: 160px;
+	border-radius:8px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,1.90);
+	z-index:2000;
+	margin:7px;
+	padding:5px;
+	font-size:.8em;
+	border-top: 1px solid rgba(0,0,0,0.50);
+	border-bottom: 1px solid rgba(0,0,0,0.50);
+		-webkit-transition: all 1s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+
 }
+.proddescription:hover {
+	opacity:1;
+	
+}
+
 .proddbutton {
-	margin-right: 18px;
-	margin-top: -67px;
+	margin-left: 22px;
+	margin-top: -160px;
+	position: absolute;
+	z-index:2500;
 }
 }
 
@@ -196,7 +226,7 @@
 	margin-top: 0px;
 }
 .proddescription {
-	visibility: collapse  ;
+	visibility: collapse;
 }
 .proddbox {
 	position: absolute;
@@ -213,7 +243,7 @@
 </style>
 </head>
 
-<body>
+<body ontouchstart="">
 <div class="cardd-container"> 
   <!--Card-->
   <div class="cardd-singlecontainer">
