@@ -13,17 +13,7 @@
 	align-items: flex-start;
 	justify-content: space-around;
 }
-body {
-	background-color: gold;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding: 20px;
-	border: solid 15px rgba(255,0,0,.50);
-	background: -webkit-linear-gradient(red, yellow, orange, gold, orange, orange, gold, red); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(red, yellow, orange, gold, orange, orange, gold, red); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(red, yellow, orange, gold, orange, orange, gold, red); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(red, yellow, orange, gold, orange, orange, gold, red); /* Standard syntax */
-	box-shadow: inset -2px -2px 202px 2px rgba(158,1,37,.50);
-}
+
 .lineitem {
 	display: flex;
 	flex-direction: row;
@@ -49,8 +39,9 @@ body {
 .item {
 	display: flex;
 	font-weight: 500;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	letter-spacing: 1px;
+	font-size:1.3em;
 }
 .price {
 	background-color: white;
@@ -67,7 +58,10 @@ body {
 	background: red;
 	text-align: center;
 }
-.menuheader {
+.soldout {
+	opacity:.3;
+	background-color:grey;
+	font-style:oblique;
 }
 .shadowtext {
 	color: #FFFFFF;
@@ -128,7 +122,14 @@ body {
 </style>
 </head>
 
-<body>
+<body 
+style="
+background-color: gold;
+padding: 20px;
+border: solid 15px rgba(0,0,0,.60);
+background: -webkit-linear-gradient(red, yellow, orange, gold, orange, orange, gold, red); 
+background: linear-gradient(red, yellow, orange, gold, orange, orange, gold, red);
+box-shadow: inset -2px -2px 202px 2px rgba(158,1,37,.50);">
 <div class="tvcontainer"> 
   <!--MENU--> 
   <!--CATEGORY-->
@@ -157,7 +158,7 @@ body {
         <div class="item pull-left">Pani Puri</div>
         <div class="price pull-right text-center"> $8.99</div>
       </div>
-      <div class="lineitem">
+      <div class="lineitem soldout">
         <div class="item pull-left">Pani Puri</div>
         <div class="price pull-right text-center"> $8.99</div>
       </div>
