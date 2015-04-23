@@ -107,9 +107,11 @@
 	overflow: auto;
 	margin-top: 5px;
 	font-weight: 300;
+	width:217px;
+	padding-right:.7em;
 }
 .proddbutton {
-	margin-right: 8px;
+	margin-right: 17px;
 }
 .proddbutton button:active {
 	background-color: red !important;
@@ -166,26 +168,28 @@
 	opacity:0;
 	
 	position: relative  ;
-	top:-120px;
+	top:-121px;
 	width:auto;
 	height: 160px;
 	border-radius:8px;
 	overflow: hidden;
 	background-color: rgba(255,255,255,1.90);
 	z-index:2000;
-	margin:7px;
-	padding:5px;
-	font-size:.8em;
+	margin:8px;
+	padding:3px;
+	font-size:.82em;
 	border-top:  1px solid rgba(0,0,0,0.50);
 	border-bottom:  1px solid rgba(0,0,0,0.50);
-		-webkit-transition: all 1s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
 
 }
 .proddescription:hover  {
+	top:-120px;
+	margin:5px;
 	opacity:1;
 	
 }
@@ -196,57 +200,6 @@
 	position: absolute;
 	z-index:2500;
 }
-}
-
-@media(min-width:1600px) {
-.cardd-container {
-		background: brown; /* Old browsers */
-	}
-.cardd-container {
-	-webkit-flex-wrap: no-wrap;
-	flex-wrap: no-wrap;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-}
-.cardd-singlecontainer {
-	background: #c8b819; /* Old browsers */
-	background: -moz-linear-gradient(top, #c8b819 0%, #f9fbbc 97%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8b819), color-stop(97%, #f9fbbc)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #c8b819 0%, #f9fbbc 97%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #c8b819 0%, #f9fbbc 97%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #c8b819 0%, #f9fbbc 97%); /* IE10+ */
-	background: linear-gradient(to bottom, #c8b819 0%, #f9fbbc 97%); /* W3C */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8b819', endColorstr='#f9fbbc', GradientType=0 ); /* IE6-9 */
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	position: relative;
-	background-color: white;
-	padding: 0px;
-	max-width: 100%;
-	min-height: 10px;
-}
-.cardd-img {
-	min-height: 35px;
-	visibility: collapse
-}
-.proddbutton {
-	
-	margin-top: 0px;
-}
-.proddescription {
-	visibility: collapse;
-}
-.proddbox {
-	position: absolute;
-	height: 10px;
-}
-.proddbutton button {
-	position: relative;
-	top: -105px;
-}
-.cardd-banner{
-	visibility: collapse;
-	}
 }
 </style>
 </head>
@@ -294,7 +247,7 @@
     <div class="cardd-img"> <img src="https://efmxurehx9yw.firesize.com/220x150/g_none/http://www.ndtv.com/cooks/images/corn-kebab_article.jpg" alt=""> </div>
     <div class="proddbox">
       <div class="proddheader">Samosa Chaat (2 Pieces)</div>
-      <div class="proddescription">Made with hot potatoes in a deep friend batter </div>
+      <div class="proddescription"> </div>
       <div class="proddbutton">
         <button class="btn btn-success btn-sm pull-right"><span class="glyphicon glyphicon-shopping-cart"></span> &nbsp; $ 5.99</button>
       </div>
