@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Chowpaaty Chaat</title>
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 <style>
@@ -10,9 +10,13 @@ body {
 	background-color: gold;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 20px;
+	border: solid 15px rgba(255,0,0,.50);
+	background: -webkit-linear-gradient(orange, gold, orange, orange, gold); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(orange, gold, orange); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(orange, gold, orange, orange, gold); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(orange, gold, orange, orange, gold); /* Standard syntax */
 }
 .lineitem {
-	border-radius: px;
 	background: #a90329; /* Old browsers */
 	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a90329), color-stop(44%, #8f0222), color-stop(100%, #6d0019)); /* Chrome,Safari4+ */
@@ -45,7 +49,7 @@ body {
 }
 .special {
 	border-radius: 5px;
-	margin: 15px;
+	margin: 12px;
 	padding: 4px;
 	background: red;
 }
@@ -56,7 +60,42 @@ body {
 }
 .shadowtext {
 	color: #FFFFFF;
-	text-shadow: 0 1px 0 #ccc,  0 2px 0 #c9c9c9,  0 3px 0 #bbb,  0 4px 0 #b9b9b9,  0 5px 0 #aaa,  0 6px 1px rgba(0,0,0,.1),  0 0 5px rgba(0,0,0,.1),  0 1px 3px rgba(0,0,0,.3),  0 3px 5px rgba(0,0,0,.2),  0 5px 10px rgba(0,0,0,.25),  0 10px 10px rgba(0,0,0,.2),  0 20px 20px rgba(0,0,0,.15);
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+.menucircle {
+	position: relative;
+	border: 10px solid rgba(255,255,255,.60);
+	box-shadow: 0px -2px 40px 1px rgba(222,2,0,.60);
+}
+.menuimg-text {
+	position: relative;
+	left: 0;
+	top: -150px;
+	padding: 10px;
+	color: white;
+	font-weight: 800;
+	margin: 5px;
+	width: 100%;
+	text-shadow: 1px 1px 12px 11px rgba(255,255,255,1.00);
+	font-size: 3.2 em;
+	opacity: 1;
+	z-index: 200;
+}
+.menuimg-text2 {
+	position: relative;
+	left: 1px;
+	top: -212px;
+	padding: 10px;
+	color: black;
+	font-weight: 900;
+	margin: 5px;
+	width: 100%;
+	text-shadow: 1px 1px 12px 11px rgba(255,255,255,1.00);
+	font-size: 3.2 em;
+	opacity: 1;
+}
+.imgheader {
+	margin-bottom: -120px;
 }
 }
 </style>
@@ -65,8 +104,11 @@ body {
 <body>
 <!--MENU--> 
 <!--CATEGORY-->
-<div class="page-header text-center text-uppercase">
-  <h1 class="menuheader">Chaat Items</h1>
+<div class="text-center text-uppercase">
+  <div class="imgheader"> <img class="img-circle menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://indipin.com/wp-content/uploads/2015/01/best-cities-in-india-to-try-the-sweetest-delicacies-tripoto-14219445758k4ng.jpg">
+    <h1 class="menuimg-text">SWEETS</h1>
+    <h1 class="menuimg-text2">SWEETS</h1>
+  </div>
 </div>
 <div class="lineitem"> <span class="item pull-left"> Paav Bhaaji</span> <span class="price pull-right text-center"> $2.99</span> </div>
 <div class="lineitem "> <span class="item pull-left">Masala Bonda</span><span class="special"></span> <span class="price pull-right text-center"> $4.75</span> </div>
@@ -74,36 +116,65 @@ body {
 <div class="lineitem"> <span class="item pull-left">Pani Puri</span> <span class="price pull-right text-center"> $8.99</span> </div>
 <!--//CATEGORY--> 
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <!--CATEGORY-->
-<div class="page-header text-center text-uppercase">
-  <h1 class="menuheader">LUNCH</h1>
+<div class="text-center text-uppercase">
+  <div class="imgheader"> <img class="img-circle menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://www.northjersey.com/polopoly_fs/1.698215!/fileImage/httpImage/chinesefood-050913-sb-tif.jpg">
+    <h1 class="menuimg-text">CHINESE</h1>
+    <h1 class="menuimg-text2">CHINESE</h1>
+  </div>
 </div>
 <div class="lineitem"> <span class="item pull-left"> Paav Bhaaji</span> <span class="price pull-right text-center"> $2.99</span> </div>
 <div class="lineitem "> <span class="item pull-left">Masala Bonda</span><span class="special"></span> <span class="price pull-right text-center"> $4.75</span> </div>
 <div class="lineitem"> <span class="item pull-left">Samosa Chaat (2 pieces)</span> <span class="price pull-right text-center"> $5.49</span> </div>
 <div class="lineitem"> <span class="item pull-left">Pani Puri</span> <span class="price pull-right text-center"> $8.99</span> </div>
+<div class="lineitem"> <span class="item pull-left">Samosa Chaat (2 pieces)</span> <span class="price pull-right text-center"> $5.49</span> </div>
+<div class="lineitem"> <span class="item pull-left">Pani Puri</span> <span class="price pull-right text-center"> $8.99</span> </div>
+<div class="lineitem"> <span class="item pull-left">Samosa Chaat (2 pieces)</span> <span class="price pull-right text-center"> $5.49</span> </div>
+<div class="lineitem"> <span class="item pull-left">Pani Puri</span> <span class="price pull-right text-center"> $8.99</span> </div>
 <!--//CATEGORY--> 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <!--CATEGORY-->
-<div class="page-header text-center text-uppercase">
-  <h1 class="menuheader">SWEETS</h1>
+<div class="text-center text-uppercase">
+  <div class="imgheader"> <img class="img-circle menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://vegrec.vegrecipesofindi.netdna-cdn.com/wp-content/uploads/2011/06/chickpeas-chaat.jpg">
+    <h1 class="menuimg-text">CHAAT</h1>
+    <h1 class="menuimg-text2">CHAAT</h1>
+  </div>
 </div>
 <div class="lineitem"> <span class="item pull-left"> Paav Bhaaji</span> <span class="price pull-right text-center"> $2.99</span> </div>
 <div class="lineitem "> <span class="item pull-left">Masala Bonda</span><span class="special"></span> <span class="price pull-right text-center"> $4.75</span> </div>
 <div class="lineitem"> <span class="item pull-left">Samosa Chaat (2 pieces)</span> <span class="price pull-right text-center"> $5.49</span> </div>
 <div class="lineitem"> <span class="item pull-left">Pani Puri</span> <span class="price pull-right text-center"> $8.99</span> </div>
 <!--//CATEGORY--> 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <!--CATEGORY-->
-<div class="page-header text-center text-uppercase">
-  <h1 class="menuheader">DRINKS</h1>
+<div class="text-center text-uppercase">
+  <div class="imgheader"> <img class="img-circle menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://silk.com/sites/default/files/recipes/medium/MangoLassi_DT.png">
+    <h1 class="menuimg-text">DRINKS</h1>
+    <h1 class="menuimg-text2">DRINKS</h1>
+  </div>
 </div>
 <div class="lineitem"> <span class="item pull-left"> Paav Bhaaji</span> <span class="price pull-right text-center"> $2.99</span> </div>
-<div class="lineitem "> <span class="item pull-left">Masala Bonda</span><span class="special"></span> <span class="price pull-right text-center"> $4.75</span> </div>
 <div class="lineitem"> <span class="item pull-left">Samosa Chaat (2 pieces)</span> <span class="price pull-right text-center"> $5.49</span> </div>
 <div class="lineitem"> <span class="item pull-left">Pani Puri</span> <span class="price pull-right text-center"> $8.99</span> </div>
 <!--//CATEGORY--> 
-<!--//MENU-->
-
+<!--//MENU--> 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 </body>
 </html>
