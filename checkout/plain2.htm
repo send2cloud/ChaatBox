@@ -142,35 +142,22 @@ body {
 }
 /*--Table--*/
 
-.tabbl {
-	width: 100%;
-	border: 0px;
-	letter-spacing: 1px;
+.checktable{
+	border:1px solid rgba(0,0,0,0.10)
+	}
+.checktable tr:nth-last-child(1) {
+	background-color:rgba(177,0,1,0.70);
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight:200;
 }
-.tabbl tbody {
-	overflow-y: scroll;
-	height: 200px;
-	width: 100%;
-	position: absolute;
-}
-.tabbl tr {
-	width: 100%;
-	display: inline-table;
-}
-.tabbl td, th {
+.checktable th {
 	width: 25%;
 }
-.tabbl td:nth-child(1), th:nth-child(1) {
+.checktable th:nth-child(1) {
 	width: 45%;
 }
-.tabbl td:nth-child(4), th:nth-child(4) {
-	width: 5%;
-}
-.tabbl th {
-	background-color: maroon;
-}
+
+
 .qtyy {
 	border-radius: 5px;
 	outline: none;
@@ -240,9 +227,9 @@ body {
   </div>
   <div class="checkout-itemlist" align="center">
 
-      <table  class="table-condensed   table-responsive str">
+      <table  class="table-condensed checktable    table-responsive">
         <thead>
-          <tr style="background-color:rgba(177,0,1,1.00);">
+          <tr>
             <th>Item</th>
             <th>Qty</th>
             <th>Price</th>
@@ -298,7 +285,7 @@ body {
             <td>$ 4.75</td>
             <td><i class="icon small glyphicon glyphicon-trash"></i></td>
           </tr>
-          <tr style="background-color:rgba(177,0,1,1.00)">
+          <tr>
             <td>TOTAL</td>
             <td> </td>
             <td>$ 234.75</td>
@@ -367,7 +354,7 @@ body {
   </div>
   <div align="center" >
     <button class="bttn" id="checkout-trigger2">Place Order</button>
-    <button class="bttn" id="checkout-trigger3">Close</button><br/><span class=" active" style="color:rgba(255,255,0,0.70); letter-spacing:1px; font-weight:100">Thank you for visiting Chowpaatty Chaat. Enjoy your meal.</span>
+    <button class="bttn" id="checkout-trigger3">Close</button><br/><p style="color:rgba(255,255,255,0.90); letter-spacing:1px; font-weight:300">Thank you for visiting Chowpaatty Chaat. <br/>Enjoy your meal!</p>
   </div>
 </div>
 </div>
