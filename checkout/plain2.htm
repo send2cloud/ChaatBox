@@ -240,7 +240,7 @@ body {
   </div>
   <div class="checkout-itemlist" align="center">
 
-      <table  class="table-condensed table-responsive str">
+      <table  class="table-condensed   table-responsive str">
         <thead>
           <tr style="background-color:rgba(177,0,1,1.00);">
             <th>Item</th>
@@ -367,7 +367,7 @@ body {
   </div>
   <div align="center" >
     <button class="bttn" id="checkout-trigger2">Place Order</button>
-    <button class="bttn" id="checkout-trigger3">Close</button>
+    <button class="bttn" id="checkout-trigger3">Close</button><br/><span class=" active" style="color:rgba(255,255,0,0.70); letter-spacing:1px; font-weight:100">Thank you for visiting Chowpaatty Chaat. Enjoy your meal.</span>
   </div>
 </div>
 </div>
@@ -379,7 +379,7 @@ body {
 
 $(document).ready(function(){
     $("#checkout-trigger, #checkout-trigger2, #checkout-trigger3").click(function(){
-	 $("#checkout-modal").slideToggle('fast');
+	 $("#checkout-modal").fadeToggle('fast');
     });
 	$("#PayNow").click(function(){
 		
