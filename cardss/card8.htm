@@ -220,28 +220,18 @@
 	min-width: 90%;
 	max-height: 75px;
 	min-height: 75px;
-	border-top: 1px solid rgba(255,255,255,1.00);
-	border-bottom: 2px solid rgba(255,255,255,1.00);
+	border-top: 0px solid rgba(255,255,255,1.00);
+	border-bottom: 0px solid rgba(255,255,255,1.00);
 	border-radius:0px;
 	
-	background: #cf0404; /* Old browsers */
-
-background: -moz-linear-gradient(top,  #cf0404 0%, #fc4619 100%); /* FF3.6+ */
-
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf0404), color-stop(100%,#fc4619)); /* Chrome,Safari4+ */
-
-background: -webkit-linear-gradient(top,  #cf0404 0%,#fc4619 100%); /* Chrome10+,Safari5.1+ */
-
-background: -o-linear-gradient(top,  #cf0404 0%,#fc4619 100%); /* Opera 11.10+ */
-
-background: -ms-linear-gradient(top,  #cf0404 0%,#fc4619 100%); /* IE10+ */
-
-background: linear-gradient(to bottom,  #cf0404 0%,#fc4619 100%); /* W3C */
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#fc4619',GradientType=0 ); /* IE6-9 */
-
-
-
+background: #c8b819; /* Old browsers */
+	background: -moz-linear-gradient(top, #c8b819 0%, #f9fbbc 17%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8b819), color-stop(17%, #f9fbbc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c8b819 0%, #f9fbbc 17%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c8b819 0%, #f9fbbc 17%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c8b819 0%, #f9fbbc 17%); /* IE10+ */
+	background: linear-gradient(to bottom, #c8b819 0%, #f9fbbc 17%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8b819', endColorstr='#f9fbbc', GradientType=0 ); /* IE6-9 */
 
 
 
@@ -263,7 +253,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
 	
 }
 .proddheader {
-	color: rgba(255,210,0,1.00);
+	color: rgba(95,0,1,1.00);
 	letter-spacing: 1px;
 	height: 20px;
 	width:50%;
@@ -278,18 +268,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
 }
 .proddescription {
 	opacity:1;
-	color: rgba(95,32,0,1.00);
+	color: brown;
 	border-radius:0px;
 	background-color:transparent;
 	border-top:  0px solid rgba(0,0,0,0.50);
 	border-bottom:  0px solid rgba(0,0,0,0.50);
 	position: absolute  ;
-	top:28px;
+	top:25px;
 	left:70px;
 	width:75%;
 	height: 50px;
-	overflow: hidden  ;
-	line-height:13px;
+	overflow: hidden;
+	
 	z-index:2000;
 	font-size:.8em;
 	-webkit-transition: all .3s ease;
@@ -300,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
 
 }
 .proddescription:hover  {
-	top:31px;
+	top:28px;
 	left:73px;
 	opacity:1;
 	
@@ -309,12 +299,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
 
 
 .proddbutton {
-	margin-left: 65px ;
-	margin-top:2px;
+	margin-left: 74px ;
+	margin-top:3px;
 	position: absolute  ;
 	z-index:2500;
 	
+	
 }
+.btn{
+	border-radius:0px;
+	padding:5px;
+	}
 
 }
 </style>
