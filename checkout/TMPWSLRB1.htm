@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<style>
+
+.tv-OverallContainer {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	background-color: grey;
+}
+.tv-MainHeader {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	height:100px;
+	
+}
+.tv-MainHeaderLeft {
+	background-color: red;
+	flex: 1 1 auto;
+}
+.tv-MainHeaderCenter {
+	background-color: Orange;
+	flex: 2 1 auto;
+}
+.tv-MainHeaderRight {
+	background-color: Yellow;
+	flex: 1 1 auto;
+}
+.tv-CategoryBlock {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	align-content: flex-start;
+	justify-content:space-around;
+	
+	height: auto;
+	background-color:grey;
+}
+
+.tv-CategoryHeader{
+	width:100%;
+	height:20px;
+	background-color:blue;
+	flex: 0 1 auto;
+}
+
+.tv-CategoryColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	
+
+	width:500px;
+	min-height:400px;
+	background-color:orange;
+	margin:10px;
+	
+}
+
+.tv-itemBlock{
+	display:flex;
+	min-width:auto;
+	flex-direction:row;
+	
+	margin:5px;
+	height:45px;
+	width:auto;
+	background-color:white;
+	z-index:100;
+
+}
+.tv-item-Title{
+	}
+	
+.tv-special{
+	}
+.tv-item-Price{
+	}
+
+</style>
+</head>
+
+<body>
+<div class="tv-container"> 
+  
+  <!--Header-->
+  <div class="tv-MainHeader">
+    <div class="tv-MainHeaderLeft">Specials</div>
+    <div class="tv-MainHeaderCenter">Header</div>
+    <div class="tv-MainHeaderRight">Order Online</div>
+  </div>
+  <hr>
+  <!--//Header--> 
+  
+  <!--Menu--> 
+  <!--CategoryBlock--> 
+  <div class="tv-CategoryBlock">
+  	<div class="tv-CategoryHeader"></div>
+  
+  <div class="tv-CategoryColumn">
+  	<div class="tv-itemBlock">
+
+     
+        <div class="tv-item-Title">Masala Bonda</div>
+        <div class="tv-special">Special</div>
+        <div class="tv-item-Price"> 4.75</div>
+      
+      
+    </div>
+    <div class="tv-itemBlock">
+    
+    </div>
+    <div class="tv-itemBlock">
+    
+    </div>
+    <div class="tv-itemBlock">
+    
+    </div>
+    <div class="tv-itemBlock">
+    
+    </div>
+    
+  </div>
+    <div class="tv-CategoryColumn">
+  	<div class="tv-itemBlock">
+    
+    </div>
+    <div class="tv-itemBlock">
+    
+    </div>
+  </div>
+    <div class="tv-CategoryColumn">
+  	<div class="tv-itemBlock">
+    
+    </div>
+  </div>
+  
+  </div>
+  <!--//CategoryBlock--> 
+  <!--//Menu--> 
+  
+</div>
+</body>
+</html>
