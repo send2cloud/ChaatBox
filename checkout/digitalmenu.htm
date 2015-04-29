@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Chowpaaty Chaat</title>
-<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="http://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 <style>
-.tvcontainer {
+.DM-tvcontainer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: space-around;
 }
-.lineitem {
+.DM-lineDM-item {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: no-wrap;
@@ -26,7 +26,7 @@
 	background: -ms-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%); /* W3C */
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0 ); /* IE6-9 */
-	width: auto;
+	width: 450px;
 	height: 45px;
 	padding: 7px;
 	color: white;
@@ -35,14 +35,14 @@
 	border-top: 2px solid rgba(255,255,255,.80);
 	border-left: 2px solid rgba(255,255,255,.50);
 }
-.item {
+.DM-item {
 	display: flex;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1.4em;
 }
-.price {
+.DM-price {
 	background-color: yellow;
 	color: brown;
 	font-size: 1.3em;
@@ -52,63 +52,48 @@
 	letter-spacing: 1px;
 	font-weight: 500;
 }
-.special {
-	width: 80px;
-	height: 20px;
+.DM-special {
+	width: 70px;
+	height: 18px;
 	border-radius: 51px;
 	background: red;
 	text-align: center;
+	font-size: .9em;
 }
-.soldout {
+.DM-soldout {
 	opacity: .3;
 	background-color: grey;
 	font-style: oblique;
 }
-.shadowtext {
-	color: #FFFFFF;
-	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-}
-.menucircle {
+.DM-menucircle {
 	position: relative;
 	border: 10px solid rgba(255,255,255,.60);
 	box-shadow: 0px -2px 40px 1px rgba(222,2,0,.60);
 }
-.menuimg-text {
+.DM-menuimg-text {
 	position: relative;
 	left: 0;
 	top: -150px;
 	z-index: 200;
 }
-.menuimg-text h1 {
+.DM-menuimg-text h1 {
 	margin: 5px;
 	padding: 10px;
 	width: 100%;
 	color: white;
 	font-size: 3.2 em;
 	font-weight: 800;
+	text-shadow: 2px 2px 12px black;
 }
-.menuimg-text2 {
-	position: relative;
-	left: 1px;
-	top: -212px;
-	padding: 10px;
-	color: black;
-	font-weight: 900;
-	margin: 5px;
-	width: 100%;
-	text-shadow: 1px 1px 12px 11px rgba(255,255,255,1.00);
-	font-size: 3.2 em;
-	opacity: 1;
-}
-.imgheader {
+.DM-imgheader {
 	margin-bottom: -120px;
 	flex-grow: 2;
 }
-.items-block {
+.DM-items-block {
 	flex-grow: 1;
 	align-content: stretch;
 }
-.cat-container {
+.DM-cat-container {
 	min-width: 100%;
 	display: flex;
 	flex-wrap: no-wrap;
@@ -116,10 +101,10 @@
 	align-items: center;
 	margin-bottom: 150px;
 }
-.cat-container:nth-child(2), .cat-container:nth-child(4), .cat-container:nth-child(6), .cat-container:nth-child(8), .cat-container:nth-child(10) {
+.DM-cat-container:nth-child(2), .DM-cat-container:nth-child(4), .DM-cat-container:nth-child(6), .DM-cat-container:nth-child(8), .DM-cat-container:nth-child(10) {
 	flex-direction: row-reverse;
 }
-.topcontainer {
+.DM-topcontainer {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: no-wrap;
@@ -131,7 +116,7 @@
 	color: rgba(255,255,255,1.00);
 	font-weight: 400;
 }
-.notification {
+.DM-notification {
 	font-size: 1em;
 	top: -10px;
 	right: -10px;
@@ -157,262 +142,326 @@ border: solid 15px rgba(0,0,0,.60);
 background: -webkit-linear-gradient(red, yellow, orange, gold, orange, orange, gold, red); 
 background: linear-gradient(red, yellow, orange, gold, orange, orange, gold, red);
 box-shadow: inset -2px -2px 202px 2px rgba(158,1,37,.50);">
-<div class=" notification">2</div>
-<div class="tvcontainer">
-  <div class="topcontainer">
-    <div align="center" style="background-color: rgba(255,193,0,.20); width:33%;padding:10px; border-top-left-radius:20px; border-bottom-left-radius:20px;">All Items 20% off this week </div>
+<div class=" DM-notification">2</div>
+<div class="DM-tvcontainer">
+  <div class="DM-topcontainer">
+    <div align="center" style="background-color: rgba(255,193,0,.20); width:33%;padding:10px; border-top-left-radius:20px; border-bottom-left-radius:20px;">All items 20% off this week </div>
     <div align="center" style="background-color: rgba(255,193,0,.50); width:33%;padding:10px; font-size:1.5em">Chowpatty Chaat</div>
     <div  align="center" style="background-color: rgba(255,193,0,.30); width:33%;padding:10px; border-top-right-radius:20px; border-bottom-right-radius:20px;">Order Online &amp; Pick it up at store www.chowpaatychaat.com</div>
   </div>
 </div>
-<div class="tvcontainer"> 
+<div class="DM-tvcontainer"> 
   <!--MENU--> 
   <!--CATEGORY-->
-  <div class="cat-container">
+  <div class="DM-cat-container">
     <div class="text-center text-uppercase">
-      <div class="imgheader "> <img class="img-circle menucircle " src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://indipin.com/wp-content/uploads/2015/01/best-cities-in-india-to-try-the-sweetest-delicacies-tripoto-14219445758k4ng.jpg"> <span class="menuimg-text">
+      <div class="DM-imgheader "> <img class="img-circle DM-menucircle " src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://vegrec.vegrecipesofindi.netdna-cdn.com/wp-content/uploads/2011/06/chickpeas-chaat.jpg"> <span class="DM-menuimg-text">
         <h1>CHAAT</h1>
         </span> </div>
     </div>
-    <div class="items-block">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
       </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">Special</div>
-        <div class="price pull-right text-center"> 4.75</div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
       </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">Special</div>
-        <div class="price pull-right text-center"> 4.75</div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
-      </div>
-    </div>
-    <div class="items-block" style="align-content: stretch;">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
-      </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">Special</div>
-        <div class="price pull-right text-center"> 4.75</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
-      </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">Special</div>
-        <div class="price pull-right text-center"> 4.75</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
       </div>
     </div>
-  </div>
-  <!--//CATEGORY--> 
-  
-  <!--CATEGORY-->
-  
-  <div class="cat-container">
-    <div class="text-center text-uppercase">
-      <div class="imgheader"> <img class="img-circle menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://www.northjersey.com/polopoly_fs/1.698215!/fileImage/httpImage/chinesefood-050913-sb-tif.jpg">
-        <h1 class="menuimg-text">CHINESE</h1>
+    <div class="DM-items-block" style="align-content: stretch;">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
       </div>
-    </div>
-    <div class="items-block">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
       </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">special</div>
-        <div class="price pull-right text-center"> 4.75</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
-      </div>
-    </div>
-    <div class="items-block">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
-      </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">special</div>
-        <div class="price pull-right text-center"> 4.75</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
-      </div>
-    </div>
-  </div>
-  
-  <!--//CATEGORY--> 
-  
-  <!--CATEGORY-->
-  <div class="cat-container">
-    <div class="text-center text-uppercase">
-      <div class="imgheader"> <img class="img-circle menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://vegrec.vegrecipesofindi.netdna-cdn.com/wp-content/uploads/2011/06/chickpeas-chaat.jpg">
-        <h1 class="menuimg-text">CHAAT</h1>
-        <h1 class="menuimg-text2">CHAAT</h1>
-      </div>
-    </div>
-    <div class="items-block">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
-      </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">special</div>
-        <div class="price pull-right text-center"> 4.75</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
-      </div>
-    </div>
-    <div class="items-block">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
-      </div>
-      <div class="lineitem ">
-        <div class="item pull-left">Masala Bonda</div>
-        <div class="special">special</div>
-        <div class="price pull-right text-center"> 4.75</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
-      </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
       </div>
     </div>
   </div>
   <!--//CATEGORY--> 
   
   <!--CATEGORY-->
-  <div class="cat-container">
+  
+  <div class="DM-cat-container">
     <div class="text-center text-uppercase">
-      <div class="imgheader"> <img class="img-circle menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://silk.com/sites/default/files/recipes/medium/MangoLassi_DT.png">
-        <h1 class="menuimg-text">DRINKS</h1>
+      <div class="DM-imgheader "> <img class="img-circle DM-menucircle " src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://vegrec.vegrecipesofindi.netdna-cdn.com/wp-content/uploads/2011/06/chickpeas-chaat.jpg"> <span class="DM-menuimg-text">
+        <h1>Parantha</h1>
+        </span> </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
       </div>
     </div>
-    <div class="items-block">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
+    <div class="DM-items-block" style="align-content: stretch;">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="DM-special">Special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
       </div>
     </div>
-    <div class="items-block">
-      <div class="lineitem">
-        <div class="item pull-left"> Paav Bhaaji</div>
-        <div class="price pull-right text-center"> 2.99</div>
+  </div>
+  
+  <!--//CATEGORY--> 
+  
+  <!--CATEGORY-->
+  <div class="DM-cat-container">
+    <div class="text-center text-uppercase">
+      <div class="DM-imgheader"> <img class="img-circle DM-menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://vegrec.vegrecipesofindi.netdna-cdn.com/wp-content/uploads/2011/06/chickpeas-chaat.jpg"> <span class="DM-menuimg-text">
+        <h1>CHINESE</h1>
+        </span> </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Samosa Chaat (2 pieces)</div>
-        <div class="price pull-right text-center"> 5.49</div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="special">special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
       </div>
-      <div class="lineitem">
-        <div class="item pull-left">Pani Puri</div>
-        <div class="price pull-right text-center"> 8.99</div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item ">
+        <div class="DM-item pull-left">Masala Bonda</div>
+        <div class="special">special</div>
+        <div class="DM-price pull-right text-center"> 4.75</div>
+      </div>
+    </div>
+  </div>
+  <!--//CATEGORY--> 
+  
+  <!--CATEGORY-->
+  <div class="DM-cat-container">
+    <div class="text-center text-uppercase">
+      <div class="DM-imgheader"> <img class="img-circle DM-menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://silk.com/sites/default/files/recipes/medium/MangoLassi_DT.png"> <span class="DM-menuimg-text">
+        <h1>THALI</h1>
+        </span> </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+    </div>
+  </div>
+  <!--//CATEGORY--> 
+  <!--CATEGORY-->
+  <div class="DM-cat-container">
+    <div class="text-center text-uppercase">
+      <div class="DM-imgheader"> <img class="img-circle DM-menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://silk.com/sites/default/files/recipes/medium/MangoLassi_DT.png"> <span class="DM-menuimg-text">
+        <h1>BEVERAGES</h1>
+        </span> </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Pani Puri</div>
+        <div class="DM-price pull-right text-center"> 8.99</div>
+      </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left">Samosa Chaat (2 pieces)</div>
+        <div class="DM-price pull-right text-center"> 5.49</div>
+      </div>
+    </div>
+  </div>
+  <!--//CATEGORY--> 
+  <!--CATEGORY-->
+  <div class="DM-cat-container">
+    <div class="text-center text-uppercase">
+      <div class="DM-imgheader"> <img class="img-circle DM-menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://silk.com/sites/default/files/recipes/medium/MangoLassi_DT.png"> <span class="DM-menuimg-text">
+        <h1>SWEETS</h1>
+        </span> </div>
+    </div>
+    <div class="DM-i	tems-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
+      </div>
+    </div>
+  </div>
+  <!--//CATEGORY--> 
+  <!--CATEGORY-->
+  <div class="DM-cat-container">
+    <div class="text-center text-uppercase">
+      <div class="DM-imgheader"> <img class="img-circle DM-menucircle" src="https://efmxurehx9yw.firesize.com/300x200/g_center/http://silk.com/sites/default/files/recipes/medium/MangoLassi_DT.png"> <span class="DM-menuimg-text">
+        <h1>WEEKEND SPECIAL</h1>
+        </span> </div>
+    </div>
+    <div class="DM-items-block">
+      <div class="DM-lineDM-item">
+        <div class="DM-item pull-left"> Paav Bhaaji</div>
+        <div class="DM-price pull-right text-center"> 2.99</div>
       </div>
     </div>
   </div>
