@@ -18,27 +18,43 @@
 	flex-direction: row;
 	height: 100px;
 	flex: 1 1 auto;
-	background-color: rgba(255,239,0,0.40);
+	background-color: rgba(255,239,0,0.10);
 	margin-bottom: 50px;
-	color: brown;
+	border-radius:20px;
+	
 }
 .tv-MainHeaderLeft {
 	flex: 1 1 auto;
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 5px;
-	background-color: rgba(255,215,0,0.40);
+	background-color: rgba(255,215,0,0.20);
+	padding-left:50px;
+	color: rgba(255,255,255,1.00);
+	text-shadow:1px 1px rgba(0,0,0,.50);
+	border-radius-left:20px;
 }
 .tv-MainHeaderCenter {
 	flex: 2 1 auto;
 	font-size: 2em;
 	margin: 5px;
 	background-color: rgba(255,215,0,1.00);
+	text-shadow:2px 2px rgba(255,255,255,.50);
+	color: brown;
+	text-transform: uppercase;
+	font-weight: 900;
+	border-radius:20px;
+		box-shadow: inset 1px 1px 10px #FF5400;
+
 }
 .tv-MainHeaderRight {
 	flex: 1 1 auto;
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 5px;
-	background-color: rgba(255,215,0,0.40);
+	background-color: rgba(255,215,0,0.20);
+	padding-right:50px;
+	color: rgba(255,255,255,1.00);
+	text-shadow:1px 1px rgba(0,0,0,.50);
+	border-radius-right:20px;
 }
 .tv-CategoryBlock {
 	display: flex;
@@ -47,9 +63,12 @@
 	align-content: center;
 	justify-content: center;
 	height: auto;
-	background-color: rgba(227,0,3,.20);
+	background-color: rgba(227,0,3,.10);
 	margin-bottom: 80px;
-	border: 2px solid rgba(255,255,255,0.30);
+	border: 2px solid rgba(255,255,255,0.20);
+	border-radius:20px;
+	box-shadow: inset 1px 1px 28px rgba(0,0,0,0.20);
+	padding:20px;
 }
 .tv-CategoryHeader {
 	width: 100%;
@@ -59,9 +78,10 @@
 .tv-category-title {
 	font-size: 2.5em;
 	color: white;
-	text-shadow: 2px 2px 5px black;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.50);
 	text-transform: uppercase;
 	font-weight: 900;
+	letter-spacing:3px;
 }
 /*.tv-CategoryColumn {
 	display: flex;
@@ -130,6 +150,22 @@
 	background: linear-gradient(red, yellow, orange, gold, orange, orange, gold, red);
 	box-shadow: inset -2px -2px 202px 2px rgba(158,1,37,.50);
 }
+.TV-notification {
+	font-size: 2em;
+	top: -15px;
+	right: -15px;
+	float: right;
+	position: relative;
+	text-align: center;
+	min-width: 50px;
+	max-height: 50px;
+	color: white;
+	border-radius: 12em;
+	border: 1px solid white;
+	box-shadow: 0 .1em .4em rgba(0,0,0,.5);
+	padding: 2px;
+	background-color: red;
+}
 </style>
 </head>
 
@@ -138,9 +174,11 @@
   
   <!--Header-->
   <div class="tv-MainHeader">
-    <div class="tv-MainHeaderLeft" align="left">Specials</div>
-    <div class="tv-MainHeaderCenter" align="center">Chowpaaty Chaat</div>
-    <div class="tv-MainHeaderRight" align="right">Order Online</div>
+    <div class="tv-MainHeaderLeft" align="left">20% off Opening Week</div>
+    <div class="tv-MainHeaderCenter" align="center">Welcome to <br/>Chowpaaty Chaat</div>
+    <div class="tv-MainHeaderRight" align="right">Order Online!<br/> Pick it up here!<br/>
+    ChowpaatyChaat.com</div>
+    <div class="TV-notification">2</div>
   </div>
   <hr>
   <!--//Header--> 
