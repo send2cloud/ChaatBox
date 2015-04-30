@@ -5,47 +5,63 @@
 <title>Welcome</title>
 <link rel="stylesheet" title="http://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-
 <style>
 .tv-OverallContainer {
 	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .tv-MainHeader {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
 	height: 100px;
+	flex: 1 1 auto;
+	background-color: rgba(255,239,0,0.40);
+	margin-bottom: 50px;
+	color: brown;
 }
 .tv-MainHeaderLeft {
 	flex: 1 1 auto;
+	font-size: 2em;
+	margin: 5px;
+	background-color: rgba(255,215,0,0.40);
 }
 .tv-MainHeaderCenter {
 	flex: 2 1 auto;
+	font-size: 2em;
+	margin: 5px;
+	background-color: rgba(255,215,0,1.00);
 }
 .tv-MainHeaderRight {
 	flex: 1 1 auto;
+	font-size: 2em;
+	margin: 5px;
+	background-color: rgba(255,215,0,0.40);
 }
 .tv-CategoryBlock {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: flex-start;
+	align-content: center;
+	justify-content: center;
 	height: auto;
-	background-color: rgba(227,0,3,.30);
-	margin-bottom:80px;
-	border: 5px solid rgba(0,0,0,1.00);
-
+	background-color: rgba(227,0,3,.20);
+	margin-bottom: 80px;
+	border: 2px solid rgba(255,255,255,0.30);
 }
-
 .tv-CategoryHeader {
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	flex: 0 1 auto;
-	font-size:2em;
-	background-color:rgba(0,0,0,0.50);
-	color:white;
+}
+.tv-category-title {
+	font-size: 2.5em;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	text-transform: uppercase;
+	font-weight: 900;
 }
 /*.tv-CategoryColumn {
 	display: flex;
@@ -61,7 +77,7 @@
 	z-index: 100;
 	display: flex;
 	flex-direction: row;
-	align-items:center;
+	align-items: center;
 	flex-wrap: no-wrap;
 	justify-content: space-between;
 	background: #a90329; /* Old browsers */
@@ -104,24 +120,27 @@
 	letter-spacing: 1px;
 	font-weight: 500;
 }
+.tv-body {
+	width: 100%;
+	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: gold;
+	padding: 20px;
+	border: solid 15px rgba(0,0,0,.60);
+	background: -webkit-linear-gradient(red, yellow, orange, gold, orange, orange, gold, red);
+	background: linear-gradient(red, yellow, orange, gold, orange, orange, gold, red);
+	box-shadow: inset -2px -2px 202px 2px rgba(158,1,37,.50);
+}
 </style>
 </head>
 
-<body style="
-font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-background-color: gold;
-padding: 20px;
-border: solid 15px rgba(0,0,0,.60);
-background: -webkit-linear-gradient(red, yellow, orange, gold, orange, orange, gold, red); 
-background: linear-gradient(red, yellow, orange, gold, orange, orange, gold, red);
-box-shadow: inset -2px -2px 202px 2px rgba(158,1,37,.50);"> 
-<div class="tv-container"> 
+<body class="tv-body">
+<div class="tv-OverallContainer"> 
   
   <!--Header-->
   <div class="tv-MainHeader">
-    <div class="tv-MainHeaderLeft">Specials</div>
-    <div class="tv-MainHeaderCenter">Header</div>
-    <div class="tv-MainHeaderRight">Order Online</div>
+    <div class="tv-MainHeaderLeft" align="left">Specials</div>
+    <div class="tv-MainHeaderCenter" align="center">Chowpaaty Chaat</div>
+    <div class="tv-MainHeaderRight" align="right">Order Online</div>
   </div>
   <hr>
   <!--//Header--> 
@@ -129,265 +148,261 @@ box-shadow: inset -2px -2px 202px 2px rgba(158,1,37,.50);">
   <!--Menu--> 
   <!--CategoryBlock-->
   <div class="tv-CategoryBlock">
-    <div class="tv-CategoryHeader" align="center">Chaat</div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-  
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-  
+    <div class="tv-CategoryHeader" align="center">
+      <div class="tv-category-title">Chaat</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">1Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">2Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">3Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">4Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">5Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">6Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">7Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">8Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">9Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">10Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">11Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">12Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">13Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">14Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">15Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">16Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">17Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">18Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
   </div>
   <!--//CategoryBlock--> 
   
   <!--CategoryBlock-->
   <div class="tv-CategoryBlock">
-    <div class="tv-CategoryHeader" align="center">Prantha & Kulcha</div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">1Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">2Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">3Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">4Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-  
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">Garlic Naan</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-
-  
-  </div>
-  <!--//CategoryBlock--> 
-  
-    <!--CategoryBlock-->
-  <div class="tv-CategoryBlock">
-    <div class="tv-CategoryHeader" align="center">THALI</div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">1Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">2Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">3Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">4Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">5Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">6Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-  
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">7Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">8Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">9Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-     
-
-  
+    <div class="tv-CategoryHeader" align="center">
+      <div class="tv-category-title">Prantha & Kulcha</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">1Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">2Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">3Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">4Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">Garlic Naan</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
   </div>
   <!--//CategoryBlock--> 
   
   <!--CategoryBlock-->
   <div class="tv-CategoryBlock">
-    <div class="tv-CategoryHeader" align="center">Beverages</div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">1Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">2Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">3Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">4Masala Bonda</div>
-        <div class="tv-special">Special</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">5Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-  
+    <div class="tv-CategoryHeader" align="center">
+      <div class="tv-category-title">THALI</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">1Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">2Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">3Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">4Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">5Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">6Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">7Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">8Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">9Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
   </div>
   <!--//CategoryBlock--> 
   
-    <!--CategoryBlock-->
+  <!--CategoryBlock-->
   <div class="tv-CategoryBlock">
-    <div class="tv-CategoryHeader" align="center">Sweets</div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">1Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-
-  
+    <div class="tv-CategoryHeader" align="center">
+      <div class="tv-category-title">Beverages</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">1Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">2Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">3Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">4Masala Bonda</div>
+      <div class="tv-special">Special</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">5Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
   </div>
   <!--//CategoryBlock--> 
   
-      <!--CategoryBlock-->
-  <div class="tv-CategoryBlock">
-    <div class="tv-CategoryHeader" align="center">Weekend Special</div>
-      <div class="tv-itemBlock">
-        <div class="tv-item-Title">1Masala Bonda</div>
-        <div align="center" class="tv-item-Price"> 4.75</div>
-      </div>
-
+  <!--CategoryBlock-->
+  <div class="tv-CategoryBlock"  style="width:600px">
+    <div class="tv-CategoryHeader" align="center">
+      <div class="tv-category-title">Sweets</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">1Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
+  </div>
+  <!--//CategoryBlock--> 
   
+  <!--CategoryBlock-->
+  <div class="tv-CategoryBlock"  style="width:600px">
+    <div class="tv-CategoryHeader" align="center" >
+      <div class="tv-category-title">Weekend Special</div>
+    </div>
+    <div class="tv-itemBlock">
+      <div class="tv-item-Title">1Masala Bonda</div>
+      <div align="center" class="tv-item-Price"> 4.75</div>
+    </div>
   </div>
   <!--//CategoryBlock--> 
   <!--//Menu--> 
