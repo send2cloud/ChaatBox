@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="3dswiper.css">
+
+    <!-- Demo styles -->
+    <style>
+    body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+		border-radius:50%;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://www.picturescolourlibrary.co.uk/loreswithlogo/2104435.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://static9.depositphotos.com/1004086/1130/i/950/depositphotos_11302854-Circle-pizza-isolated-on-white-background.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(https://efmxurehx9yw.firesize.com/600x600/g_none/http://media.merchantcircle.com/6946390/Pepperoni%20Pizza%20JPEG%20-%20Cuffaro_full.jpeg)"></div>
+        </div>
+        <!-- Add Pagination -->
+<!--        <div class="swiper-pagination"></div>
+-->    </div>
+
+    <!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.7/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+//        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 70,
+            stretch: 0,
+            depth: 200,
+            modifier: 2,
+            slideShadows : true
+        }
+    });
+    </script>
+</body>
+</html>
