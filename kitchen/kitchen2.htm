@@ -71,6 +71,7 @@
 	    -ms-flex-pack: start;
 	        justify-content: flex-start;
 	width: 100%;
+	text-decoration:none;
 }
 ul{
 	padding-left:20px;
@@ -115,6 +116,18 @@ ul{
 	font-size: 1.5em;
 	text-decoration:underline;
 }
+.messagetokitchen{
+	background-color:red; 
+	color:yellow;
+	}
+.ordersbox:hover, .ordersbox-inkitchen:hover{
+			background-color:black;
+			color:ivory;
+			padding-left:40px;
+padding-right:40px;
+cursor:pointer;
+
+}
 </style>
 </head>
 
@@ -127,7 +140,7 @@ ul{
         <li>Pani Puri (5)</li>
         <li>Idli (2)</li>
         <li>Naan Thaali</li>
-        <li style="background-color:red; color:yellow">Make it less spicy</li>
+        <li class="messagetokitchen">Make it less spicy</li>
       </ul>
     </div>
     <div class="ordersbox" draggable="true">
@@ -157,7 +170,7 @@ ul{
         <li>Naan Thaali</li>
         <li>Masala Roast</li>
         <li>Filter Coffee</li>
-        <li style="background-color:red; color:yellow">Extra Chutney</li>
+        <li class="messagetokitchen">Extra Chutney</li>
       </ul>
     </div>
     <div class=" ordersbox-inkitchen">

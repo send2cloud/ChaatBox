@@ -19,6 +19,8 @@
 	flex-wrap: wrap;
 	background-color: white;
 	justify-content:center;
+	max-width:100%;
+	overflow:hidden;
 }
 .singleCard {
 	display: flex;
@@ -74,6 +76,8 @@
 .cardButton {
 	height: 30px;
 	margin: 10px;
+	position: relative;
+	bottom:15px;
 }
 .soldout {
 	opacity: .5;
@@ -159,52 +163,35 @@
 .starRatings {
 font-size:1.3em;
 	}
-/*--for  iphones 6+--*/
-@media(max-width:600px) {
-.cardContainer {
-	flex-direction: row;
-	-webkit-flex-wrap: no-wrap;
-	-ms-flex-wrap: no-wrap;
-	flex-wrap: no-wrap;
-	background-color: ivory;
-	justify-content: flex-start;
-		-webkit-transition: all .3s ease;
-	transition: all .3s ease;
-	padding:5px;
-}
+/*--for  iphones +--*/
+@media(max-width:500px) {
+
 
 .singleCard {
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8b819), color-stop(50%, #f9fbbc)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #c8b819 0%, #f9fbbc 50%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
-	background: linear-gradient(to bottom, #c8b819 0%, #f9fbbc 50%); /* W3C */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8b819', endColorstr='#f9fbbc', GradientType=0 ); /* IE6-9 */
 
-	display: flex;
 	flex-direction: row;
+	
 	border:.5px solid rgba(0,0,0,0.10);
 	margin: 2px;
-	min-width: 450px;
-	height: 100px;
+	width: 100%;
+	height: 150px;
 	border-radius: 0px;
-		-webkit-transition: all .3s ease;
-	transition: all .3s ease;
+	
 	
 }
 .cardHeader {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 400;
 	padding: 5px;
 	position: absolute;
 	top: 0px;
 	left:0px;
-	width:150px;
 		-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
 .cardImage {
 	border-radius:0px;
-	width:150px;
-	height:100px;
+	width:100%;
 	overflow:hidden;
 		-webkit-transition: all .3s ease;
 	transition: all .3s ease;
@@ -221,27 +208,37 @@ font-size:1.3em;
 	
 }
 .cardDescription {
+		position: absolute;
+		top:30px;
+		left:-50px;
+		width:100%;
+		color:white;
+		font-size:.9em;
+		text-shadow:1px 1px rgba(0,0,0,1.00);
+		border-radius:20px;
+		
+		visibility: collapse;
+
 	padding-top: 5px;
 	padding-left:80px;
 	height: 100px;
-		-webkit-transition: all .3s ease;
-	transition: all .3s ease;
 
 }
 .cardImage:hover {
-	-webkit-filter: brightness(100%);
+	-webkit-filter: ;
 }
 .cardButton {
-	position: relative;
-	top:20px;
-	bottom:0px;
+	position: absolute;
+	
+	right:10px;
+	bottom:10px;
 	height: 20px;
 	
 }
 .starRatings{
 	position: relative;
-	left:-300px;
-	top:40px;
+	left:-140px;
+	bottom:5px;
 		}
 }
 </style>
@@ -255,7 +252,7 @@ font-size:1.3em;
 <div>
     <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg"> 
 </div>
-    <div class="cardHeader">1 Paav Bhaaji</div>
+    <div class="cardHeader">Paav Bhaaji</div>
     <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
     
     <div class="cardButton">
@@ -277,7 +274,7 @@ font-size:1.3em;
     <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg"> 
     <span class="specialsBanner"></span>
     </div>
-    <div class="cardHeader">2 Channa Batura</div>
+    <div class="cardHeader">Channa Batura</div>
     <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
     
     <div class="cardButton">
@@ -289,23 +286,190 @@ font-size:1.3em;
     </div>
   </div>
   <!--//Card--> 
+  
+  
+   
+  <!--Card-->
+  <div class="singleCard" >
+<div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://whatshelikes.in/wp-content/uploads/2014/02/pav.png"> 
+</div>
+    <div class="cardHeader">Paav Bhaaji</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+    
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
+    
+  <!--Card-->
+  <div class="singleCard">
+    <div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.foodfellas4you.com/wp-content/uploads/2014/05/20140505-110350.jpg"> 
+    <span class="specialsBanner"></span>
+    </div>
+    <div class="cardHeader">Channa Batura</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+    
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
+   
+  <!--Card-->
+  <div class="singleCard" >
+<div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://creamcentre.com/files/7413/6023/0816/delhi_tawa_paratha_meal.jpg"> 
+</div>
+    <div class="cardHeader">Paav Bhaaji</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+   
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
+    
+  <!--Card-->
+  <div class="singleCard">
+    <div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://2.bp.blogspot.com/-WdOr1UWetGo/U6UGw5JGBbI/AAAAAAAAKbI/e1dkA3IxxLk/s1600/DSC05538.JPG"> 
+    <span class="specialsBanner"></span>
+    </div>
+    <div class="cardHeader">Channa Batura</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+    
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
+   
+  <!--Card-->
+  <div class="singleCard" >
+<div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.sukhadia.com/Assets/ProductImages/SamosaChaat.jpg"> 
+</div>
+    <div class="cardHeader">Paav Bhaaji</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+  
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
+    
+  <!--Card-->
+  <div class="singleCard">
+    <div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg"> 
+    <span class="specialsBanner"></span>
+    </div>
+    <div class="cardHeader">Channa Batura</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+    🌟 🌟 🌟
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
+   
+  <!--Card-->
+  <div class="singleCard" >
+<div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/https://myfoodtapestry.files.wordpress.com/2013/07/sev-puri3.jpg"> 
+</div>
+    <div class="cardHeader">Paav Bhaaji</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+    🌟 🌟 🌟
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
+    
+  <!--Card-->
+  <div class="singleCard">
+    <div>
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://latinlink.usmediaconsulting.com/wp-content/uploads/2013/11/Sodas.jpg"> 
+    <span class="specialsBanner"></span>
+    </div>
+    <div class="cardHeader">Channa Batura</div>
+    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
+    
+    <div class="cardButton">
+    <div class="pull-left starRatings" >
+    🌟 🌟 🌟
+    </div>
+      <button class="btn  btn-success btn-sm pull-right">
+      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
+    </div>
+  </div>
+  <!--//Card--> 
+  
+  
    
   <!--Card-->
   <div class="singleCard" >
 <div>
     <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg"> 
 </div>
-    <div class="cardHeader">3 Paav Bhaaji</div>
+    <div class="cardHeader">Paav Bhaaji</div>
     <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
     
     <div class="cardButton">
-    <div class="pull-left starRatings " >
+    <div class="pull-left starRatings" >
     🌟 🌟 🌟
     </div>
       <button class="btn  btn-success btn-sm pull-right">
       <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
     </div>
-       <div class="cornerRibbonWrapper"><div class="cornerRibbon">NEW</div></div>
+           <div class="cornerRibbonWrapper"><div class="cornerRibbon">NEW</div></div>
+
   </div>
   <!--//Card--> 
   
@@ -314,32 +478,13 @@ font-size:1.3em;
   <!--Card-->
   <div class="singleCard">
     <div>
-    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg"> 
+    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.hungrynights.co.in/category/recipe_image_1374318673.png"> 
     </div>
-    <div class="cardHeader">4 Channa Long Tile (2 Pieces) </div>
+    <div class="cardHeader">Channa Batura (2 Pieces)</div>
     <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
     
     <div class="cardButton">
-    <div class="pull-left starRatings " >
-    🌟 🌟 🌟
-    </div>
-      <button class="btn  btn-success btn-sm pull-right">
-      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
-    </div>
-  </div>
-  <!--//Card--> 
-  
-    
-  <!--Card-->
-  <div class="singleCard" >
-<div>
-    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg"> 
-</div>
-    <div class="cardHeader">5 Paav Bhaaji</div>
-    <div class="cardDescription"></div>
-    
-    <div class="cardButton">
-    <div class="pull-left starRatings " >
+    <div class="pull-left starRatings" >
     🌟 🌟 🌟
     </div>
       <button class="btn  btn-success btn-sm pull-right">
@@ -349,64 +494,7 @@ font-size:1.3em;
   <!--//Card--> 
   
   
-    
-  <!--Card-->
-  <div class="singleCard">
-    <div>
-    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg"> 
-    </div>
-    <div class="cardHeader">6 Channa</div>
-    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
-    
-    <div class="cardButton">
-    <div class="pull-left starRatings " >
-    🌟 🌟 🌟
-    </div>
-      <button class="btn  btn-success btn-sm pull-right">
-      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
-    </div>
-  </div>
-  <!--//Card--> 
   
-    
-  <!--Card-->
-  <div class="singleCard" >
-<div>
-    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/matar-tikki_article.jpg"> 
-</div>
-    <div class="cardHeader">7 Paav Bhaaji</div>
-    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep. Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
-    
-    <div class="cardButton">
-    <div class="pull-left starRatings " >
-    🌟 🌟 🌟
-    </div>
-      <button class="btn  btn-success btn-sm pull-right">
-      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
-    </div>
-       <div class="cornerRibbonWrapper"><div class="cornerRibbon">NEW</div></div>
-  </div>
-  <!--//Card--> 
-  
-  
-    
-  <!--Card-->
-  <div class="singleCard">
-    <div>
-    <img class="cardImage" src="https://efmxurehx9yw.firesize.com/220x150/g_center/http://www.ndtv.com/cooks/images/marut-sikka-tehri-new_article.jpg"> 
-    </div>
-    <div class="cardHeader">8 Channa Batura</div>
-    <div class="cardDescription">Made with hot potatoes in a deep friend batter. Made with hot potatoes in a deep. Made with hot potatoes in a deep.</div>
-    
-    <div class="cardButton">
-    <div class="pull-left starRatings " >
-    🌟 🌟 🌟
-    </div>
-      <button class="btn  btn-success btn-sm pull-right">
-      <span class="glyphicon glyphicon-shopping-cart">&nbsp;</span>$ 5.99</button>
-    </div>
-  </div>
-  <!--//Card--> 
 </div>
 </body>
 </html>
